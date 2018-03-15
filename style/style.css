@@ -1,0 +1,757 @@
+@font-face {
+    font-family: "SegoeScript";
+    src: url("../fonts/SegoeScript.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.ttf");
+}
+
+a, button {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.inner-container{
+    max-width: 1806px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .inner-container{
+        max-width: 1770px;
+        width: 92%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .inner-container{
+        width: 97%;
+    }
+}
+@media screen and (min-width: 1050px) and (max-width: 1199px) {
+    .inner-container{
+        width: 86%;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1049px) {
+    .inner-container{
+        width: 90%;
+    }
+}
+@media (max-width: 979px) {
+    .inner-container{
+        width: 100%;
+    }
+    .catch-up-content-container {
+        display: none;
+    }
+}
+
+
+.section-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 511px;
+    background: url(../img/contact-row-background.png) no-repeat 100% 100%;
+    background-size: cover;
+    /*margin-bottom: 70px;*/
+}
+
+.contact-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-description, .header-part-description  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-part-description {
+    margin-top: 93px;
+    margin-left: 188px;
+}
+
+.contact-description-header, .header-part-description-header {
+    font-family: "Century Gothic";
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-part-description-header {
+    margin-bottom: 18px;
+}
+
+.contact-description-text, .header-part-description-text {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: white;
+}
+.contact-description-text {
+    margin-top: 30px;
+}
+
+.contact-interplay {
+    margin-top: 60px;
+    height: 71px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-banner-button{
+    background-color: white;
+    border: 0;
+    width: 46%;
+    padding: 25px 0;
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.second-banner-button{
+    border: 2px solid white;
+    background: none;
+    width: 46%;
+    padding: 25px 0;
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.interplay-button {
+    padding: 19px 0;
+}
+
+.contact-section-button-color {
+    border: 2px solid rgb(68, 183, 89);
+}
+
+.phone {
+    font-family: "Century Gothic";
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-color-text {
+    color: rgb(68, 183, 89);
+}
+
+.second-color-text {
+    color: white;
+}
+
+
+.section-staff-slider {
+    margin-top: 100px;
+}
+
+.staff-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.staff-item-container {
+    margin: 0 25px;
+    position: relative;
+}
+
+.staff-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.staff-item-img {
+    border-radius: 50%;
+}
+
+.staff-item-description {
+    width: 285px;
+    margin-top: 65px;
+}
+
+.black {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5%;
+}
+
+
+
+
+.info-paragraph{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.description-header-part {
+    background: url(../img/section-description-background.png) no-repeat 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 490px;
+}
+
+.header-part-container {
+
+}
+
+.header-part-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.description-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 100px;*/
+}
+
+.description-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 690px;
+}
+
+.articles-block {
+    height: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 100px;
+}
+
+.articles-block .main-item-description {
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.services-info-block {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoying-block {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+    bottom: 225px;
+}
+
+.decoying-block-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    height: 770px;
+    width: 100%;
+}
+
+.decoying-block-img-text {
+    color: white;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    background-color: rgba(24, 90, 19, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 10px;
+}
+
+.decoying-block-img-large-text {
+    font-size: 180px;
+}
+
+.decoying-block-img-little-text {
+    font-size: 49px;
+}
+
+.decoying-block-caption {
+    padding: 40px 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-info {
+    margin-top: 4px;
+}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 245px;
+    background: url(../img/section-row-background.png) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.row-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-family: "Century Gothic";
+}
+
+.section-slider {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.section-complex-slider {
+    margin-top: 60px;
+}
+
+.complexes-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-item-block {
+    background-color: #f4f4f4;
+}
+
+.main-item-block-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    height: 440px;
+}
+
+.img1 {
+    background: url(../img/item1.png) no-repeat;
+}
+
+.img2 {
+    background: url(../img/item2.png) no-repeat;
+}
+
+.img3 {
+    background: url(../img/item3.png) no-repeat;
+}
+
+.decoying-item {
+    background: url(../img/decoying-item.png) 100% 100% no-repeat;
+}
+
+.block-caption-title {
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-item-block-caption {
+    padding: 40px 59px;
+}
+
+.block-img-text {
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 48px;
+    font-weight: bold;
+    background-color: rgba(24, 90, 19, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main-item-description {
+    text-align: justify;
+}
+
+.item-desc-title {
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row-content .main-item-description {
+    width: 390px;
+    margin-left: 110px;
+}
+
+.row-content .info-paragraph,.row-content .item-desc-title {
+    color: white;
+}
+
+.smooth {
+    opacity: 0.65;
+}
+
+
+.footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: white;
+    height: 51px;
+}
+
+.footer-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.communication-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.communication-info, .copyright-years {
+    margin-right: 15px;
+}
+
+.communication-block {
+    margin-right: 100px;
+}
+
+
+
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-content{
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background: url(../img/logo.png) 100% 100% no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 65px;
+}
+
+.nav{
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 18px;
+    width: 76%;
+}
+
+.number{
+    font-size: 30px;
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.icon{
+    background: url(../img/sprites.png) no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.icon2{
+    background-position-x: -25px;
+}
+
+.icon3{
+    background-position-x: -50px;
+}
+
+.icon4{
+    background-position-x: -73px;
+}
+
+.icon5{
+    background-position-x: -95px;
+}
+
+.languages {
+    font-family: "Calibri";
+    font-size: 18px;
+}
+
+.banner {
+    width: 100%;
+    background: url(../img/background1.png) no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-active-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    position: relative;
+    left: 15%;
+    top: 100px;
+}
+
+.banner-text {
+    font-family: "Century Gothic";
+    font-size: 60px;
+    color: white;
+    margin-top: 225px;
+}
+
+.text-part-second {
+    color: #44b759;
+}
+
+.banner-paragraph {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: white;
+    width: 690px;
+    margin-top: 30px;
+}
+
+.banner-button {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.banner-logo {
+    background: url(../img/logo.png) no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 411px;
+    position: relative;
+    left: -30%;
+    bottom: 170px;
+}
+
+.block-popular {
+    width: 100%;
+}
+
+.block-popular-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-title {
+    font-family: "Century Gothic";
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.popular-caption-title {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.main-popular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.side-info {
+    width: 19.2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info {
+    width: 76.9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-info-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.side-info-item:first-of-type {
+    margin-top: 0;
+}
+
+.info-item-title {
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-info-item {
+    width: 30.5%;
+}
+
+.main-info .main-item-description {
+    margin-top: 30px;
+    text-align: justify;
+}
