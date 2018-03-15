@@ -8,7 +8,51 @@
     <title>Title</title>
 </head>
 <body>
+
     <div class="wrapper">
+
+
+        <div class="popup_overlay" onClick="popup_out();"></div>
+        <div class="popup" id="request">
+            <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+            <!--Обратная связь-->
+            <div class="block-forms">
+                <div class="form-header feedback-header"></div>
+                <div class="feedback-container">
+                    <div class="contacts-content feedback-helper">
+                        <div class="feedback-block-container">
+                            <div class="feedback-content">
+                                <div class="form-block-title">
+                                    <h4><span class="form-title-word">Заполните</span> форму заявки и получите</h4>
+                                    <h4>найденные варианты на почту:</h4>
+                                </div>
+                                <form action="POST" class="real-form">
+                                    <input type="text" class="forms-input feedback-input" placeholder="Ваше имя">
+                                    <input type="number" class="forms-input feedback-input" placeholder="Ваш телефон">
+                                    <input type="email" class="forms-input feedback-input" placeholder="Ваш E-mail">
+                                    <input type="submit" class="forms-button feedback-button" value="Получить варианты">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="feedback-block-part"></div>
+
+                        <div class="second-part-feedback">
+                            <div class="header-part-title">
+                                <h3><span class="green-header-title">Lorem ipsum </span>dolor sit amet</h3>
+                            </div>
+                            <div class="title-caption">
+                            <span>sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt lorem</span>
+                            </div>
+                            <div class="feedback-number">
+                                <span>+ 8 (000) 000 00 00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <header class="header">
             <div class="inner-container">
@@ -48,8 +92,12 @@
                                 Все услуги бесплатны. Наличие, цены, акции, условия застройщиков</p>
                         </div>
                         <div class="banner-button">
-                            <button class="first-banner-button">Оставить заявку</button>
-                            <button class="second-banner-button">Узнать больше</button>
+                            <button class="open_popup first-banner-button" onclick="popup('request')">
+                                Оставить заявку
+                            </button>
+                            <button class="open_popup second-banner-button" onclick="popup('request')">
+                                Узнать больше
+                            </button>
                         </div>
                     </div>
                     <div class="banner-logo"></div>
@@ -166,7 +214,556 @@
             </div>
         </section>
 
+        <section class="section-slider section-forms-slider">
+            <div class="forms-slider__btn forms-slider__btn-left"></div>
+            <div class="forms-slider">
+                <!--Region-->
+                <div class="block-forms">
+                    <div class="form-header">
+                        <div class="inner-container">
+                            <div class="header-part-title">
+                                <h3>Выберите интересующий</h3>
+                                <h3>район <span class="green-header-title">Санкт-петербурга</span> или Локацию</h3>
+                            </div>
+                            <div class="title-caption">
+                    <span>sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt lorem</span>
+                            </div>
+
+                        </div>
+                        <div class="next-block-part"></div>
+                        <div class="next-block">
+                            <div class="next-block-container">
+                                <div class="header-part-title">
+                                    <h3>Следующий</h3>
+                                    <h3>Шаг</h3>
+                                </div>
+                                <div class="title-caption">
+                                    <span>Выбор категории Квартиры</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="checkboxes-part-container">
+                        <div class="inner-container">
+                            <div class="checkboxes-part-container-content">
+                                <div class="first-block-checkboxes">
+                                    <h3 class="checkboxes-title">Районы</h3>
+                                    <ul class="checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="1-checkbox" class="input" name="1-points">
+                                            <label for="1-checkbox" class="point-square"></label>
+                                            <label for="1-checkbox" class="point-text">Адмиралтейский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="2-checkbox" class="input" name="1-points">
+                                            <label for="2-checkbox" class="point-square"></label>
+                                            <label for="2-checkbox" class="point-text">Василеостровский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="3-checkbox" class="input" name="1-points">
+                                            <label for="3-checkbox" class="point-square"></label>
+                                            <label for="3-checkbox" class="point-text">Выборгский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="4-checkbox" class="input" name="1-points">
+                                            <label for="4-checkbox" class="point-square"></label>
+                                            <label for="4-checkbox" class="point-text">Калининский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="5-checkbox" class="input" name="1-points">
+                                            <label for="5-checkbox" class="point-square"></label>
+                                            <label for="5-checkbox" class="point-text">Кировский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="6-checkbox" class="input" name="1-points">
+                                            <label for="6-checkbox" class="point-square"></label>
+                                            <label for="6-checkbox" class="point-text">Красногвардейский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="7-checkbox" class="input" name="1-points">
+                                            <label for="7-checkbox" class="point-square"></label>
+                                            <label for="7-checkbox" class="point-text">Красносельский</label>
+                                        </li>
+
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="8-checkbox" class="input" name="1-points">
+                                            <label for="8-checkbox" class="point-square"></label>
+                                            <label for="8-checkbox" class="point-text">Московский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="9-checkbox" class="input" name="1-points">
+                                            <label for="9-checkbox" class="point-square"></label>
+                                            <label for="9-checkbox" class="point-text">Невский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="10-checkbox" class="input" name="1-points">
+                                            <label for="10-checkbox" class="point-square"></label>
+                                            <label for="10-checkbox" class="point-text">Петроградский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="11-checkbox" class="input" name="1-points">
+                                            <label for="11-checkbox" class="point-square"></label>
+                                            <label for="11-checkbox" class="point-text">Приморский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="12-checkbox" class="input" name="1-points">
+                                            <label for="12-checkbox" class="point-square"></label>
+                                            <label for="12-checkbox" class="point-text">Фрунзенский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="13-checkbox" class="input" name="1-points">
+                                            <label for="13-checkbox" class="point-square"></label>
+                                            <label for="13-checkbox" class="point-text">Центральный</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="second-block-checkboxes">
+                                    <h3 class="checkboxes-title">Локация</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="14-checkbox" class="input" name="2-points">
+                                            <label for="14-checkbox" class="point-square"></label>
+                                            <label for="14-checkbox" class="point-text">Янино</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="15-checkbox" class="input" name="2-points">
+                                            <label for="15-checkbox" class="point-square"></label>
+                                            <label for="15-checkbox" class="point-text">Бугры</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="16-checkbox" class="input" name="2-points">
+                                            <label for="16-checkbox" class="point-square"></label>
+                                            <label for="16-checkbox" class="point-text">Всеволожск</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="17-checkbox" class="input" name="2-points">
+                                            <label for="17-checkbox" class="point-square"></label>
+                                            <label for="17-checkbox" class="point-text">Девяткино</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="18-checkbox" class="input" name="2-points">
+                                            <label for="18-checkbox" class="point-square"></label>
+                                            <label for="18-checkbox" class="point-text">Колпино</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="19-checkbox" class="input" name="2-points">
+                                            <label for="19-checkbox" class="point-square"></label>
+                                            <label for="19-checkbox" class="point-text">Кудрово</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="20-checkbox" class="input" name="2-points">
+                                            <label for="20-checkbox" class="point-square"></label>
+                                            <label for="20-checkbox" class="point-text">Мурино</label>
+                                        </li>
+
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="21-checkbox" class="input" name="2-points">
+                                            <label for="21-checkbox" class="point-square"></label>
+                                            <label for="21-checkbox" class="point-text">Парнас</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="22-checkbox" class="input" name="2-points">
+                                            <label for="22-checkbox" class="point-square"></label>
+                                            <label for="22-checkbox" class="point-text">Сертолово</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="23-checkbox" class="input" name="2-points">
+                                            <label for="23-checkbox" class="point-square"></label>
+                                            <label for="23-checkbox" class="point-text">Уткина Заводь</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="24-checkbox" class="input" name="2-points">
+                                            <label for="24-checkbox" class="point-square"></label>
+                                            <label for="24-checkbox" class="point-text">Колтуши</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="25-checkbox" class="input" name="2-points">
+                                            <label for="25-checkbox" class="point-square"></label>
+                                            <label for="25-checkbox" class="point-text">Новогорелово</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="26-checkbox" class="input" name="2-points">
+                                            <label for="26-checkbox" class="point-square"></label>
+                                            <label for="26-checkbox" class="point-text">Рыбацкое</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="27-checkbox" class="input" name="2-points">
+                                            <label for="27-checkbox" class="point-square"></label>
+                                            <label for="27-checkbox" class="point-text">Коммендантский</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="28-checkbox" class="input" name="2-points">
+                                            <label for="28-checkbox" class="point-square"></label>
+                                            <label for="28-checkbox" class="point-text">Московское шоссе</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Flat-->
+                <div class="block-forms">
+                    <div class="form-header">
+                        <div class="inner-container">
+                            <div class="previous-block-part"></div>
+                            <div class="previous-block">
+                                <div class="next-block-container">
+                                    <div class="header-part-title">
+                                        <h3>Предыдущий</h3>
+                                        <h3>Шаг</h3>
+                                    </div>
+                                    <div class="title-caption">
+                                        <span>Выбор Района</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-forms-container">
+                            <div class="header-part-title">
+                                <h3>Выберите интересующий Вас</h3>
+                                <h3>тип <span class="green-header-title">Квартиры </span> и её параметры</h3>
+                            </div>
+                            <div class="title-caption">
+                    <span>sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt lorem</span>
+                            </div>
+                        </div>
+                        <div class="next-block-part next-block-part-second"></div>
+                        <div class="next-block next-block-second">
+                            <div class="next-block-container">
+                                <div class="header-part-title">
+                                    <h3>Следующий</h3>
+                                    <h3>Шаг</h3>
+                                </div>
+                                <div class="title-caption">
+                                    <span>sit amet, consectetur adipisicing elit, sed do.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkboxes-part-container">
+                        <div class="inner-container">
+                            <div class="checkboxes-part-container-content">
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Тип Квартиры</h3>
+                                    <ul class="checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="29-checkbox" class="input" name="3-points">
+                                            <label for="29-checkbox" class="point-square"></label>
+                                            <label for="29-checkbox" class="point-text">Студия</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="30-checkbox" class="input" name="3-points">
+                                            <label for="30-checkbox" class="point-square"></label>
+                                            <label for="30-checkbox" class="point-text">1-х комнатная</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="31-checkbox" class="input" name="3-points">
+                                            <label for="31-checkbox" class="point-square"></label>
+                                            <label for="31-checkbox" class="point-text">2-х комнатная</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="32-checkbox" class="input" name="3-points">
+                                            <label for="32-checkbox" class="point-square"></label>
+                                            <label for="32-checkbox" class="point-text">3-х комнатная</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="33-checkbox" class="input" name="3-points">
+                                            <label for="33-checkbox" class="point-square"></label>
+                                            <label for="33-checkbox" class="point-text">4-х комнатная</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Стоимость</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="34-checkbox" class="input" name="4-points">
+                                            <label for="34-checkbox" class="point-square"></label>
+                                            <label for="34-checkbox" class="point-text">До 2-х млн.</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="35-checkbox" class="input" name="4-points">
+                                            <label for="35-checkbox" class="point-square"></label>
+                                            <label for="35-checkbox" class="point-text">От 2-х до 3-х млн.</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="36-checkbox" class="input" name="4-points">
+                                            <label for="36-checkbox" class="point-square"></label>
+                                            <label for="36-checkbox" class="point-text">От 3-х до 4-х млн.</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="37-checkbox" class="input" name="4-points">
+                                            <label for="37-checkbox" class="point-square"></label>
+                                            <label for="37-checkbox" class="point-text">От 4-х до 5-х млн.</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="38-checkbox" class="input" name="4-points">
+                                            <label for="38-checkbox" class="point-square"></label>
+                                            <label for="38-checkbox" class="point-text">Более 5 млн.</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Отделка</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="39-checkbox" class="input" name="5-points">
+                                            <label for="39-checkbox" class="point-square"></label>
+                                            <label for="39-checkbox" class="point-text">С отделкой</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="40-checkbox" class="input" name="5-points">
+                                            <label for="40-checkbox" class="point-square"></label>
+                                            <label for="40-checkbox" class="point-text">Без отделки</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Год сдачи</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="41-checkbox" class="input" name="6-points">
+                                            <label for="41-checkbox" class="point-square"></label>
+                                            <label for="41-checkbox" class="point-text">2018</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="42-checkbox" class="input" name="6-points">
+                                            <label for="42-checkbox" class="point-square"></label>
+                                            <label for="42-checkbox" class="point-text">2019</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="43-checkbox" class="input" name="6-points">
+                                            <label for="43-checkbox" class="point-square"></label>
+                                            <label for="43-checkbox" class="point-text">2020</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="44-checkbox" class="input" name="6-points">
+                                            <label for="44-checkbox" class="point-square"></label>
+                                            <label for="44-checkbox" class="point-text">2021</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="45-checkbox" class="input" name="6-points">
+                                            <label for="45-checkbox" class="point-square"></label>
+                                            <label for="45-checkbox" class="point-text">Сдан</label>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Payment-->
+                <div class="block-forms">
+                    <div class="form-header third-form-header">
+                        <div class="inner-container">
+                            <div class="previous-block-part"></div>
+                            <div class="previous-block">
+                                <div class="next-block-container">
+                                    <div class="header-part-title">
+                                        <h3>Предыдущий</h3>
+                                        <h3>Шаг</h3>
+                                    </div>
+                                    <div class="title-caption">
+                                        <span>Выбор категории Квартиры</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-forms-container">
+                            <div class="header-part-title">
+                                <h3>Выберите интересующий Вас</h3>
+                                <h3 class="third-form-header-title">вариант <span class="green-header-title">Оплаты </span> и метраж помещений</h3>
+                            </div>
+                            <div class="title-caption">
+                    <span>sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt lorem</span>
+                            </div>
+                        </div>
+                        <div class="next-block-part next-block-part-second"></div>
+                        <div class="next-block next-block-second next-block-third">
+                            <div class="next-block-container">
+                                <div class="header-part-title">
+                                    <h3>Последний</h3>
+                                    <h3>Шаг</h3>
+                                </div>
+                                <div class="title-caption">
+                                    <span>Укажите ваши контактные данные для связи.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkboxes-part-container">
+                        <div class="inner-container">
+                            <div class="checkboxes-part-container-content">
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Вариант Оплаты:</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="46-checkbox" class="input" name="7-points">
+                                            <label for="46-checkbox" class="point-square"></label>
+                                            <label for="46-checkbox" class="point-text">Ипотека</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="47-checkbox" class="input" name="7-points">
+                                            <label for="47-checkbox" class="point-square"></label>
+                                            <label for="47-checkbox" class="point-text">Рассрочка</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="48-checkbox" class="input" name="7-points">
+                                            <label for="48-checkbox" class="point-square"></label>
+                                            <label for="48-checkbox" class="point-text">Наличная оплата</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="49-checkbox" class="input" name="7-points">
+                                            <label for="49-checkbox" class="point-square"></label>
+                                            <label for="49-checkbox" class="point-text">Материнский капитал</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="50-checkbox" class="input" name="7-points">
+                                            <label for="50-checkbox" class="point-square"></label>
+                                            <label for="50-checkbox" class="point-text">Военная ипотека</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="51-checkbox" class="input" name="7-points">
+                                            <label for="51-checkbox" class="point-square"></label>
+                                            <label for="51-checkbox" class="point-text">Субсидии</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Размер кухни</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="52-checkbox" class="input" name="8-points">
+                                            <label for="52-checkbox" class="point-square"></label>
+                                            <label for="52-checkbox" class="point-text">До 10 м2</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="53-checkbox" class="input" name="8-points">
+                                            <label for="53-checkbox" class="point-square"></label>
+                                            <label for="53-checkbox" class="point-text">От 10 до 15 м2</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="54-checkbox" class="input" name="8-points">
+                                            <label for="54-checkbox" class="point-square"></label>
+                                            <label for="54-checkbox" class="point-text">Более 15 м2</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="55-checkbox" class="input" name="8-points">
+                                            <label for="55-checkbox" class="point-square"></label>
+                                            <label for="55-checkbox" class="point-text">Не имеет значения</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="four-block-checkboxes">
+                                    <h3 class="checkboxes-title">Тип санузла</h3>
+                                    <ul class="checkboxes second-checkboxes">
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="56-checkbox" class="input" name="9-points">
+                                            <label for="56-checkbox" class="point-square"></label>
+                                            <label for="56-checkbox" class="point-text">Раздельный</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="57-checkbox" class="input" name="9-points">
+                                            <label for="57-checkbox" class="point-square"></label>
+                                            <label for="57-checkbox" class="point-text">Совмещенный</label>
+                                        </li>
+                                        <li class="checkbox-point">
+                                            <input type="radio" id="58-checkbox" class="input" name="9-points">
+                                            <label for="58-checkbox" class="point-square"></label>
+                                            <label for="58-checkbox" class="point-text">Не имеет значения</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Contacts-->
+                <div class="block-forms">
+                    <div class="form-header">
+                        <div class="inner-container">
+                            <div class="previous-block-part"></div>
+                            <div class="previous-block">
+                                <div class="next-block-container">
+                                    <div class="header-part-title">
+                                        <h3>Предыдущий</h3>
+                                        <h3>Шаг</h3>
+                                    </div>
+                                    <div class="title-caption">
+                                        <span>sit amet, consectetur adipisicing elit, sed do.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-forms-container">
+                            <div class="header-part-title">
+                                <h3><span class="green-header-title">Найдено </span>8 вариантов квартир</h3>
+                                <h3>в 5 Жилых Комплексах</h3>
+                            </div>
+                            <div class="title-caption">
+                    <span>sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt lorem</span>
+                            </div>
+                        </div>
+                        <div class="next-block-part next-block-part-second"></div>
+                        <div class="next-block next-block-second next-block-third">
+                            <div class="next-block-container">
+                                <div class="header-part-title">
+                                    <h3>Просмотретm</h3>
+                                    <h3>варианты</h3>
+                                </div>
+                                <div class="title-caption">
+                                    <span>Укажите ваши контактные данные для связи.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-container">
+                        <div class="inner-container">
+                            <div class="contacts-content">
+                                <div class="form-block-container">
+                                    <div class="form-block-title">
+                                        <h4><span class="form-title-word">Заполните</span> форму заявки и получите</h4>
+                                        <h4>найденные варианты на почту:</h4>
+                                    </div>
+                                    <form action="POST" class="real-form">
+                                        <input type="text" class="forms-input" placeholder="Ваше имя">
+                                        <input type="number" class="forms-input" placeholder="Ваш телефон">
+                                        <input type="email" class="forms-input" placeholder="Ваш E-mail">
+                                        <input type="submit" class="forms-button" value="Получить варианты">
+                                    </form>
+                                </div>
+                                <div class="bonus-container">
+                                    <span class="first-bonus-text">Бонус!</span>
+                                    <span class="second-bonus-text">Описание Бонуса</span>
+                                    <div class="third-bonus-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adip</span>
+                                        <span>isicing elit, sedyte</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forms-slider__btn forms-slider__btn-right"></div>
+        </section>
+
         <section class="section-slider section-complex-slider">
+            <div class="slider__btn slider__btn-left"></div>
                 <div class="complexes-slider">
                     <div class="main-item-block slider-item-block">
                         <div class="main-item-block-img img1">
@@ -253,6 +850,7 @@
                         </div>
                     </div>
                 </div>
+            <div class="slider__btn slider__btn-right"></div>
         </section>
 
         <section class="section-contact">
@@ -274,10 +872,10 @@
                         </div>
 
                         <div class="contact-interplay">
-                            <button class="first-banner-button interplay-button">
+                            <button class="open_popup first-banner-button interplay-button">
                                 Оставить заявку
                             </button>
-                            <button class="second-banner-button interplay-button contact-section-button-color first-color-text">
+                            <button class="open_popup second-banner-button interplay-button contact-section-button-color first-color-text">
                                 Узнать больше
                             </button>
                         </div>

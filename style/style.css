@@ -30,6 +30,9 @@ a, button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    background: white;
 }
 
 .inner-container{
@@ -412,6 +415,7 @@ a, button {
 }
 
 .section-complex-slider {
+    position: relative;
     margin-top: 60px;
 }
 
@@ -754,4 +758,456 @@ a, button {
 .main-info .main-item-description {
     margin-top: 30px;
     text-align: justify;
+}
+
+.slider__btn {
+    height: 100%;
+    width: 200px;
+    background: white;
+    opacity: 0.65;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    transition: all .4s linear;
+}
+
+.slider__btn-left {
+    left: 0;
+}
+
+.slider__btn-right {
+    right: 0;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-forms-slider {
+    position: relative;
+    margin-top: 60px;
+}
+
+.forms-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.forms-slider__btn {
+    height: 294px;
+    width: 450px;
+    /*background: white;*/
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.forms-slider__btn-left {
+    left: 0;
+}
+
+.forms-slider__btn-right {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.block-forms{
+    width: 100%;
+    /*margin-top: 105px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header{
+    background-color: #24282b;
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    padding: 85px 0 70px 0;
+}
+
+.green-header-title{
+    color: #44b759;
+}
+
+.title-caption{
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.next-block{
+    width: 31.5%;
+    background-color: #44b759;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 85px 0 70px 0;
+}
+
+.next-block-second{
+    width: 23.5%;
+}
+
+.next-block-part{
+    width: 0;
+    height: 0;
+    border-bottom: 294px solid #44b759;
+    border-left: 117px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 31.4%;
+}
+
+.next-block-part-second{
+    right: 23.4%;
+}
+
+.previous-block-part{
+    width: 0;
+    height: 0;
+    border-top: 294px solid #44b759;
+    border-right: 117px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 23.4%;
+}
+
+.previous-block{
+    width: 23.5%;
+    background-color: #44b759;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 85px 0 70px 0;
+}
+
+.next-block-container{
+    margin-left: 60px;
+}
+
+.checkboxes-part-container{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 325px;
+}
+
+.second-checkboxes{
+    height: 370px;
+}
+
+.checkboxes-title{
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.checkbox-point{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox-point:first-of-type{
+    margin-top: 25px;
+
+}
+
+.input{
+    display: none;
+}
+
+.point-square{
+    width: 30px;
+    height: 30px;
+    background-color: #24282b;
+}
+
+.point-text{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.input:checked + .point-square{
+    background-color: #44b759;
+}
+
+.point-square:hover,
+.point-text:hover{
+    cursor: pointer;
+}
+
+.first-block-checkboxes{
+    width: 46%;
+}
+
+.four-block-checkboxes{
+    width: 24%;
+}
+
+.checkboxes-part-container-content{
+    display: flex;
+}
+
+.second-block-checkboxes{
+    width: 48%;
+}
+
+.title-forms-container{
+    text-align: center;
+}
+
+.next-block-third{
+    padding: 78px 0 60px 0;
+}
+
+.third-form-header-title{
+    font-size: 41px;
+}
+
+.third-form-header{
+    padding: 90px 0 71px 0;
+}
+
+.contacts-container{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.contacts-content{
+    display: flex;
+}
+
+.form-block-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-block-title{
+    font-family: "Century Gothic";
+    font-size: 24px;
+}
+
+.form-title-word{
+    font-weight: bold;
+}
+
+.real-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.forms-input{
+    font-size: 18px;
+    font-family: "Century Gothic";
+    padding: 22px;
+    width: 38%;
+    margin-top: 20px;
+}
+
+.forms-input:first-of-type{
+    margin-top: 0;
+}
+
+.forms-button{
+    margin-top: 55px;
+    width: 52%;
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #24282b;
+    padding: 25px;
+    text-align: center;
+}
+
+.bonus-container{
+    background-color: #24282b;
+    color: white;
+    font-family: "Century Gothic";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 42.5%;
+}
+
+.first-bonus-text{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.second-bonus-text{
+    margin-top: 95px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.third-bonus-text{
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-header{
+    padding: 0;
+    height: 295px;
+}
+
+.feedback-block-container{
+    width: 37%;
+}
+
+.feedback-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.feedback-container{
+    width: 100%;
+}
+
+.feedback-input{
+    width: 51%;
+}
+
+.feedback-button{
+    width: 71.3%;
+}
+
+.feedback-helper{
+    position: relative;
+}
+
+.second-part-feedback{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background-color: #24282b;
+    margin-top: -1px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-part-title{
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.feedback-number{
+    font-family: "Century Gothic";
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-top: 75px;
+}
+
+.feedback-block-part{
+    width: 0;
+    height: 0;
+    border-bottom: 560px solid #24282b;
+    border-left: 242px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 49.9%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup_overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+.popup {
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 15;
+    padding: 10px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+}
+
+.popup_close{
+    width: 6%;
+    height: 13%;
+    position: absolute;
+    z-index: 16;
+    top: -15px;
+    right: 100px;
+    background: url(../img/closet.png) center center no-repeat;
+    background-size: cover;
 }
