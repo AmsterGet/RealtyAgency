@@ -2574,3 +2574,7 @@ input[type="submit"] {
         width: 2px;
     }
 }
+
+.open_popup {
+    cursor: pointer;
+}

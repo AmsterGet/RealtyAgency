@@ -8,7 +8,6 @@
 </head>
 <body>
 <div class="wrapper">
-
     <div class="popup_overlay" onClick="popup_out();"></div>
     <div class="popup" id="request">
         <div class="popup_close noselect" onClick="popup_out();"></div>
@@ -62,11 +61,11 @@
                 <div class="logo"></div>
                 <nav class="nav">
                     <ul class="header-list">
-                        <li><a href="#">Главная</a></li>
+                        <li><a href="../index.html">Главная</a></li>
                         <li><a href="#">Дисконты</a></li>
-                        <li><a href="#">Жилые комплексы</a></li>
+                        <li><a href="../residential-complexes-page/index.html">Жилые комплексы</a></li>
                         <li><a href="#">Полезное по недвижимости</a></li>
-                        <li>Обратная связь</li>
+                        <li class="open_popup" onclick="popup('request')">Обратная связь</li>
                         <li class="number">+ 8 000 000 00 00</li>
                     </ul>
                 </nav>
@@ -87,9 +86,8 @@
     <section class="banner-third-page">
         <div class="inner-container">
             <div class="banner-third-page-content">
-                <div class="banner-third-page-title">
-                    <h2>Популярные</h2>
-                    <h2>Жилые Комплексы</h2>
+                <div class="banner-third-page-title banner-four-page-title">
+                    <h2>Полезное по Недвижимости</h2>
                 </div>
                 <div class="banner-third-page-caption">
                     <span>Здесь собраны самые интересные акции и предложения по жилым комплексам. Где можно купить
@@ -101,138 +99,122 @@
         </div>
     </section>
 
-    <section class="block-set-flats">
+
+
+    <main class="page-4-main-container">
         <div class="inner-container">
-            <div class="block-set-flats-content">
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-1 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
+            <div class="page-4-main-content">
+                <div class="first-block-main">
+                    <div class="text-first-block-main">
+                        <h2 class="title-four-main">Аналитика Недвижимости</h2>
+                        <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error</p>
+                        <p class="paragraph-four-main">sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                            aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                            nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                            ut labore et dolore magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tem</p>
+                        <p class="paragraph-four-main">por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                            natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                            sunt explicabo. Nemo enim ipsam
+                        </p>
+                        <p class="paragraph-four-main">oluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                            qui dolorem ipsum quia dolor sit amet, equat. Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa e ab illo inventore veritatis et
+                            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsamconsectetur,
+                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                    <div class="img-first-block-main"></div>
+                </div>
+                <div class="second-block-main">
+                    <p class="info-paragraph paragraph-four-main">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error
+                    </p>
+                    <p class="info-paragraph paragraph-four-main">
+                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                        quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        aliquam quaerat voluptatem.Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tem.
+                    </p>
+                </div>
+                <div class="third-block-main">
+                    <div class="img-third-block-main"></div>
+                    <div class="text-third-block-main">
+                        <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt  ommodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+                        </p>
+                        <p class="paragraph-four-main">sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                            et quasi architecto beatae vitae dicta sunt explicabo. aut fugit, sed quia
+                            consequuntur magni dol
+                        </p>
+                        <p class="paragraph-four-main">ores eos qui ratione voluptatem sequi
+                            nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectee magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tem.
+                        </p>
                     </div>
                 </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-2 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-3 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-4 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-5 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-6 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-1 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-2 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flat-set">
-                    <div class="main-item-block">
-                        <div class="main-item-block-img flat-img-3 main-item-img-set">
-                            <div class="block-img-text img-text-set-flats">
-                                <span>13  999 руб.</span>
-                            </div>
-                        </div>
-                        <div class="main-item-block-caption">
-                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte</p>
-                        </div>
-                    </div>
+                <div class="page-4-buttons-container">
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Справочник райнов СПБ</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sedyte</span>
+                    </a>
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Аналитика Недвижимости</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip-
+                            isicing elit, sedyte</span>
+                    </a>
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Ипотека и Финансы</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sedyte</span>
+                    </a>
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Новости Недвижимости</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sedyte</span>
+                    </a>
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Самое обсуждаемое</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sedyte</span>
+                    </a>
+                    <a class="button-4-page">
+                        <h4 class="block-caption-title">Самое обсуждаемое</h4>
+                        <span class="caption-button-4-page">Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sedyte</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <section class="section-contact sec-contact-helper">
         <div class="inner-container contact-container">
@@ -368,7 +350,6 @@
     </footer>
 
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../slick/slick.min.js"></script>
 <script type="text/javascript" src="../slick/settings.js"></script>

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "SegoeScript";
+    src: url("../../fonts/SegoeScript.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../../fonts/CenturyGothic.ttf");
+}
+
 .wrapper{
     width: 100%;
     display: -webkit-box;
@@ -340,17 +350,14 @@
 
 .img1{
     background: url(../img/item1.png) no-repeat;
-    background-size: cover;
 }
 
 .img2{
     background: url(../img/item2.png) no-repeat;
-    background-size: cover;
 }
 
 .img3{
     background: url(../img/item3.png) no-repeat;
-    background-size: cover;
 }
 
 
@@ -395,28 +402,11 @@
     color: #44b759;
 }
 
-.title-caption {
+.title-caption{
     color: white;
     font-family: "Century Gothic";
     font-size: 18px;
     margin-top: 25px;
-}
-@media screen and (max-width: 1780px) {
-    .title-caption{
-        font-size: 14px;
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .title-caption{
-        font-size: 11px;
-        margin-top: 12px;
-    }
-}
-@media screen and (max-width: 1400px) {
-    .second-part-feedback .title-caption {
-        font-size: 12px;
-    }
 }
 
 .next-block{
@@ -763,21 +753,6 @@
     font-size: 48px;
     font-weight: bold;
 }
-@media screen and (max-width: 1650px) {
-    .header-part-title {
-        font-size: 46px;
-    }
-}
-@media screen and (max-width: 1549px) {
-    .header-part-title {
-        font-size: 33px;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .header-part-title {
-        font-size: 24px;
-    }
-}
 
 .feedback-number{
     font-family: "Century Gothic";
@@ -980,6 +955,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all .4s ease;
 }
 
 .button-4-page:hover{
@@ -1028,7 +1004,7 @@
 
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
     .block-caption-title{
-        font-size: 28px;
+        font-size: 30px;
     }
 }
 
@@ -1041,405 +1017,6 @@
 @media screen and (max-width: 1199px) {
     .block-caption-title{
         font-size: 20px;
-    }
-}
-
-.banner-third-page{
-    width: 100%;
-    background: url(../img/banner.png) 100% 100% no-repeat;
-    background-size: cover;
-    height: 540px;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .banner-third-page{
-        height: 445px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .banner-third-page{
-        height: 360px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .banner-third-page{
-        height: 280px;
-    }
-}
-
-.banner-third-page-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-third-page-title{
-    font-family: "Century Gothic";
-    font-weight: bold;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    margin-top: 205px;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .banner-third-page-title{
-        font-size: 50px;
-        margin-top: 170px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .banner-third-page-title{
-        font-size: 40px;
-        margin-top: 105px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .banner-third-page-title{
-        font-size: 30px;
-        margin-top: 70px;
-    }
-}
-
-.banner-third-page-caption{
-    text-align: center;
-    font-family: "Century Gothic";
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    width: 1222px;
-    margin-top: 35px;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .banner-third-page-caption{
-        font-size: 16px;
-        width: 1000px;
-        margin-top: 25px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .banner-third-page-caption{
-        font-size: 16px;
-        width: 1000px;
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .banner-third-page-caption{
-        font-size: 12px;
-        width: 740px;
-        margin-top: 10px;
-    }
-}
-
-.block-set-flats{
-    width: 100%;
-}
-
-.block-set-flats-content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.flat-img-1{
-    background-size: cover;
-    background: url(../img/flat-img-1.png) 100% 100% no-repeat;
-}
-
-.flat-img-2{
-    background-size: cover;
-    background: url(../img/flat-img-2.png) 100% 100% no-repeat;
-}
-
-.flat-img-3{
-    background-size: cover;
-    background: url(../img/flat-img-3.png) 100% 100% no-repeat;
-}
-
-.flat-img-4{
-    background-size: cover;
-    background: url(../img/flat-img-4.png) 100% 100% no-repeat;
-}
-
-.flat-img-5{
-    background-size: cover;
-    background: url(../img/flat-img-5.png) 100% 100% no-repeat;
-}
-
-.flat-img-6{
-    background-size: cover;
-    background: url(../img/flat-img-6.png) 100% 100% no-repeat;
-}
-
-.img-text-set-flats{
-    width: 77%;
-    background-color: #2a2c2b;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .img-text-set-flats{
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .img-text-set-flats{
-        font-size: 30px;
-        width: 65%;
-        padding: 10px 0;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .img-text-set-flats{
-        font-size: 25px;
-        width: 65%;
-        padding: 10px 0;
-    }
-}
-
-.main-item-img-set{
-    height: 422px;
-    background-size: cover;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .main-item-img-set{
-        height: 370px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .main-item-img-set{
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .main-item-img-set{
-        height: 210px;
-    }
-}
-
-.card-flat-set{
-    width: 31%;
-    margin-top: 50px;
-}
-
-.main-item-block:hover{
-    cursor: pointer;
-    background-color: #2a2c2b;
-    color: white;
-}
-
-.main-item-block:hover .img-text-set-flats{
-    background-color: rgba(24, 90, 19, 0.8);
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .block-caption-paragraph{
-        margin-top: 15px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .block-caption-paragraph{
-        margin-top: 10px;
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .block-caption-paragraph{
-        margin-top: 5px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .main-item-block-caption{
-        padding: 25px 40px;
-        text-align: center;
-    }
-}
-
-.open-flat{
-    width: 100%;
-    margin-top: 70px;
-}
-
-.open-flat-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.first-part-open{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.img-first-open{
-    width: 73.2%;
-    height: 720px;
-    background: url(../img/img-first-open.png) 100% 100% no-repeat;
-    background-size: cover;
-}
-
-.text-block-first-open{
-    width: 23.6%;
-    display: flex;
-    flex-direction: column;
-}
-
-.first-text-header{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Century Gothic";
-    margin-top: 30px;
-}
-
-.first-block-text{
-    font-size: 18px;
-    font-family: "Century Gothic";
-    margin-top: 30px;
-    text-align: justify;
-}
-
-.first-block-text-title{
-    font-weight: bold;
-}
-
-.action-block{
-    width: 100%;
-    margin-top: 110px;
-}
-
-.sale-block{
-    width: 100%;
-}
-
-.sale-item{
-    width: 31.5%;
-    margin-top: 110px;
-}
-
-.sale-img{
-background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 80px;
-    height: 420px;
-    width: 100%;
-    font-family: "Century Gothic";
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .sale-img{
-        font-size: 70px;
-        height: 380px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .sale-img{
-        font-size: 60px;
-        height: 320px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .sale-img{
-        font-size: 45px;
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .main-item-block-caption{
-        padding: 25px 40px;
-        text-align: center;
-    }
-}
-
-.sale-block-content{
-    display: flex;
-    justify-content: space-between;
-}
-
-.sale-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sale-text-title{
-    font-family: "Century Gothic";
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 70px;
-    text-align: center;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .sale-text-title{
-        font-size: 28px;
-        margin-top: 65px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .sale-text-title{
-        font-size: 22px;
-        margin-top: 45px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .sale-text-title{
-        font-size: 20px;
-        margin-top: 35px;
-    }
-}
-
-.sale-text-paragraph{
-    font-family: "Century Gothic";
-    font-size: 18px;
-    text-align: justify;
-    width: 470px;
-}
-
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .sale-text-paragraph{
-        font-size: 16px;
-        width: 370px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1550px) {
-    .sale-text-paragraph{
-        font-size: 14px;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .sale-text-paragraph{
-        font-size: 12px;
-        width: 220px;
     }
 }
 
@@ -1801,29 +1378,6 @@ input[type="submit"] {
     width: 37%;
 }
 
-{
-    width: 0;
-    height: 0;
-    border-bottom: 605px solid #24282b;
-    border-left: 190px solid transparent;
-    position: absolute;
-    top: 0;
-    right: 47.9%;
-}
-@media screen and (max-width: 1549px) {
-    .feedback-block-part{
-        border-bottom: 501px solid #24282b;
-        border-left: 190px solid transparent;
-    }
-}
-@media screen and (max-width: 1400px) {
-    .feedback-block-part{
-        border-bottom: 431px solid #24282b;
-        border-left: 150px solid transparent;
-    }
-}
-
-
 .section-row {
     display: flex;
     flex-direction: row;
@@ -2118,4 +1672,234 @@ input[type="submit"] {
 
 .sec-contact-helper{
     margin-top: 80px;
+}
+
+.sale-block{
+    width: 100%;
+}
+
+.sale-item{
+    width: 31.5%;
+    margin-top: 110px;
+}
+
+.sale-img{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 80px;
+    height: 420px;
+    width: 100%;
+    font-family: "Century Gothic";
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .sale-img{
+        font-size: 70px;
+        height: 380px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .sale-img{
+        font-size: 60px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sale-img{
+        font-size: 45px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .main-item-block-caption{
+        padding: 25px 40px;
+        text-align: center;
+    }
+}
+
+.sale-block-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sale-text-title{
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .sale-text-title{
+        font-size: 28px;
+        margin-top: 65px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .sale-text-title{
+        font-size: 22px;
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sale-text-title{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+}
+
+.sale-text-paragraph{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    text-align: justify;
+    width: 470px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .sale-text-paragraph{
+        font-size: 16px;
+        width: 370px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .sale-text-paragraph{
+        font-size: 14px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sale-text-paragraph{
+        font-size: 12px;
+        width: 220px;
+    }
+}
+
+.banner-third-page{
+    width: 100%;
+    background: url(../img/banner-4-page.png) 100% 100% no-repeat;
+    background-size: cover;
+    height: 540px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .banner-third-page{
+        height: 445px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .banner-third-page{
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-third-page{
+        height: 280px;
+    }
+}
+
+.banner-third-page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-third-page-title{
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 205px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .banner-third-page-title{
+        font-size: 50px;
+        margin-top: 170px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .banner-third-page-title{
+        font-size: 40px;
+        margin-top: 105px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-third-page-title{
+        font-size: 30px;
+        margin-top: 70px;
+    }
+}
+
+.banner-third-page-caption{
+    text-align: center;
+    font-family: "Century Gothic";
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 1222px;
+    margin-top: 35px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .banner-third-page-caption{
+        font-size: 16px;
+        width: 1000px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .banner-third-page-caption{
+        font-size: 16px;
+        width: 1000px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-third-page-caption{
+        font-size: 12px;
+        width: 740px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+    .banner-four-page-title{
+        margin-top: 135px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-four-page-title {
+        margin-top: 105px;
+    }
+}
+
+.open_popup {
+    cursor: pointer;
 }

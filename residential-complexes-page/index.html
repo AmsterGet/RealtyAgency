@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="popup_overlay" onClick="popup_out();"></div>
+    <div class="popup" id="request">
+        <div class="popup_close noselect" onClick="popup_out();"></div>
+        <!--Обратная связь-->
+        <div class="block-forms">
+            <div class="form-header feedback-header">
+                <div class="header-part-title">
+                    <h3><span class="green-header-title">Lorem ipsum </span>dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="feedback-container">
+                <div class="contacts-content feedback-helper">
+                    <div class="feedback-block-container">
+                        <div class="feedback-content">
+                            <div>
+                                <div class="form-block-title">
+                                    <h4><span class="form-title-word">Заполните</span> форму заявки и получите</h4>
+                                    <h4>найденные варианты на почту:</h4>
+                                </div>
+                                <form action="POST" class="real-form">
+                                    <input type="text" class="forms-input " placeholder="Ваше имя">
+                                    <input type="number" class="forms-input " placeholder="Ваш телефон">
+                                    <input type="email" class="forms-input " placeholder="Ваш E-mail">
+                                    <input type="submit" class="forms-button " value="Получить варианты">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-block-part"></div>
+
+                    <div class="second-part-feedback">
+                        <div class="header-part-title">
+                            <h3><span class="green-header-title">Lorem ipsum </span>dolor sit amet</h3>
+                        </div>
+                        <div class="title-caption">
+                            <span>sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt lorem</span>
+                        </div>
+                        <div class="feedback-number">
+                            <span>+ 8 (000) 000 00 00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="inner-container">
+            <div class="header-content">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul class="header-list">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="#">Дисконты</a></li>
+                        <li><a href="#">Жилые комплексы</a></li>
+                        <li><a href="../helpful-page/index.html">Полезное по недвижимости</a></li>
+                        <li class="open_popup" onclick="popup('request')">Обратная связь</li>
+                        <li class="number">+ 8 000 000 00 00</li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <div class="icon"></div>
+                    <div class="icon icon2"></div>
+                    <div class="icon icon3"></div>
+                    <div class="icon icon4"></div>
+                    <div class="icon icon5"></div>
+                </div>
+                <div class="languages">
+                    <span>RUS</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-third-page">
+        <div class="inner-container">
+            <div class="banner-third-page-content">
+                <div class="banner-third-page-title">
+                    <h2>Популярные</h2>
+                    <h2>Жилые Комплексы</h2>
+                </div>
+                <div class="banner-third-page-caption">
+                    <span>Здесь собраны самые интересные акции и предложения по жилым комплексам. Где можно купить
+                        квартиру  в определенном районе города. Самые низкие процентные
+                        ставки и первый взнос  по ипотеки. Выгодные условия от наших партнеров
+                        подрядчиков по квартирам.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block-set-flats">
+        <div class="inner-container">
+            <div class="block-set-flats-content">
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-1 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-2 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-3 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-4 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-5 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-6 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-1 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-2 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flat-set">
+                    <div class="main-item-block">
+                        <div class="main-item-block-img flat-img-3 main-item-img-set">
+                            <div class="block-img-text img-text-set-flats">
+                                <span>13  999 руб.</span>
+                            </div>
+                        </div>
+                        <div class="main-item-block-caption">
+                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
+                                con- sectetur adipisicing elit, sedyte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact sec-contact-helper">
+        <div class="inner-container contact-container">
+            <div class="contact-content">
+                <div class="contact-item">
+                    <div class="contact-description">
+                            <span>
+                                <span class="contact-description-header first-color-text">
+                                    Lorem ipsum
+                                </span>
+                                <span class="contact-description-header second-color-text">
+                                    dolor sit amet
+                                </span>
+                            </span>
+                        <span class="contact-description-text smooth">
+                                Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt lorem
+                            </span>
+                    </div>
+
+                    <div class="contact-interplay">
+                        <button class="open_popup more-button left-button" onclick="popup('request')">
+                            Оставить заявку
+                        </button>
+                        <button class="open_popup more-button interplay-right-button first-color-text" onclick="popup('request')">
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-description">
+                            <span>
+                                <span class="contact-description-header first-color-text">
+                                    Lorem ipsum
+                                </span>
+                                <span class="contact-description-header second-color-text">
+                                    dolor sit amet
+                                </span>
+                            </span>
+                        <span class="contact-description-text smooth">
+                                Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt lorem
+                            </span>
+                    </div>
+
+                    <div class="contact-interplay phone">
+                        + 8 (000) 000 00 00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sale-block">
+        <div class="inner-container">
+            <div class="sale-block-content">
+                <div class="sale-item">
+                    <div class="sale-img">
+                        <span>АКЦИЯ!</span>
+                    </div>
+                    <div class="sale-text">
+                        <h5 class="sale-text-title">Название Акции</h5>
+                        <p class="sale-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipisic, consecte et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+                <div class="sale-item">
+                    <div class="sale-img">
+                        <span>АКЦИЯ!</span>
+                    </div>
+                    <div class="sale-text">
+                        <h5 class="sale-text-title">Название Акции</h5>
+                        <p class="sale-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipisic, consecte et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+                <div class="sale-item">
+                    <div class="sale-img">
+                        <span>АКЦИЯ!</span>
+                    </div>
+                    <div class="sale-text">
+                        <h5 class="sale-text-title">Название Акции</h5>
+                        <p class="sale-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipisic, consecte et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-row section-row-helper">
+        <div class="inner-container row-container">
+            <div class="row-content">
+                <div class="main-item-description">
+                    <h4 class="item-desc-title">Контактная информация</h4>
+                    <p class="info-paragraph smooth">
+                        Lorem ipsum dolor sit amet, consectetur idunt dolore aliqua.Lorem ipsum dolor.
+                    </p>
+                </div>
+                <div class="main-item-description">
+                    <h4 class="item-desc-title">Контактная информация</h4>
+                    <p class="info-paragraph smooth">
+                        Lorem ipsum dolor sit amet, consectetur idunt dolore aliqua.Lorem ipsum dolor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner-container">
+            <div class="footer-text">
+                <div class="communication-block">
+                        <span class="communication-info">
+                            По вопросам сотрудничества
+                        </span>
+
+                    <span class="communication-phone">
+                            + 7 000 000 00 00
+                        </span>
+                </div>
+
+                <div class="copyright-block">
+                        <span class="copyright-years">
+                            2017-2018
+                        </span>
+                    <span class="copyright-text">
+                            Все права защищены
+                        </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script type="text/javascript" src="../slick/settings.js"></script>
+</body>
+</html>
