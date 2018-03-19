@@ -196,6 +196,7 @@ function foo() {
 foo();
 
 function funcFlats() {
+    console.log();
     let root2 = document.getElementById("flats-set-open");
     console.log(root2);
     let buttonStudia = document.getElementById("button-part1");

@@ -251,6 +251,7 @@
             </div>
         </section>
 
+
         <section class="section-slider section-forms-slider">
             <div class="forms-slider__btn forms-slider__btn-left"></div>
             <div class="forms-slider">
@@ -287,69 +288,69 @@
                             <div class="checkboxes-part-container-content">
                                 <div class="first-block-checkboxes">
                                     <h3 class="checkboxes-title">Районы</h3>
-                                    <ul class="checkboxes">
-                                        <li class="checkbox-point">
-                                            <input type="radio" id="1-checkbox" class="input" name="1-points">
+                                    <ul class="checkboxes" id="region">
+                                        <li class="checkbox-point" id="1-checkbox-list" onclick="filter(id)">
+                                            <input type="radio" id="1-checkbox" class="input" name="1-points" >
                                             <label for="1-checkbox" class="point-square"></label>
                                             <label for="1-checkbox" class="point-text">Адмиралтейский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="2-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="2-checkbox" class="input" name="1-points">
                                             <label for="2-checkbox" class="point-square"></label>
                                             <label for="2-checkbox" class="point-text">Василеостровский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="3-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="3-checkbox" class="input" name="1-points">
                                             <label for="3-checkbox" class="point-square"></label>
                                             <label for="3-checkbox" class="point-text">Выборгский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="4-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="4-checkbox" class="input" name="1-points">
                                             <label for="4-checkbox" class="point-square"></label>
                                             <label for="4-checkbox" class="point-text">Калининский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="5-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="5-checkbox" class="input" name="1-points">
                                             <label for="5-checkbox" class="point-square"></label>
                                             <label for="5-checkbox" class="point-text">Кировский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="6-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="6-checkbox" class="input" name="1-points">
                                             <label for="6-checkbox" class="point-square"></label>
                                             <label for="6-checkbox" class="point-text">Красногвардейский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="7-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="7-checkbox" class="input" name="1-points">
                                             <label for="7-checkbox" class="point-square"></label>
                                             <label for="7-checkbox" class="point-text">Красносельский</label>
                                         </li>
 
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="8-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="8-checkbox" class="input" name="1-points">
                                             <label for="8-checkbox" class="point-square"></label>
                                             <label for="8-checkbox" class="point-text">Московский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="9-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="9-checkbox" class="input" name="1-points">
                                             <label for="9-checkbox" class="point-square"></label>
                                             <label for="9-checkbox" class="point-text">Невский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="10-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="10-checkbox" class="input" name="1-points">
                                             <label for="10-checkbox" class="point-square"></label>
                                             <label for="10-checkbox" class="point-text">Петроградский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="11-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="11-checkbox" class="input" name="1-points">
                                             <label for="11-checkbox" class="point-square"></label>
                                             <label for="11-checkbox" class="point-text">Приморский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="12-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="12-checkbox" class="input" name="1-points">
                                             <label for="12-checkbox" class="point-square"></label>
                                             <label for="12-checkbox" class="point-text">Фрунзенский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="13-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="13-checkbox" class="input" name="1-points">
                                             <label for="13-checkbox" class="point-square"></label>
                                             <label for="13-checkbox" class="point-text">Центральный</label>
@@ -358,84 +359,83 @@
                                 </div>
                                 <div class="second-block-checkboxes">
                                     <h3 class="checkboxes-title">Локация</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="location">
+                                        <li class="checkbox-point" id="14-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="14-checkbox" class="input" name="2-points">
                                             <label for="14-checkbox" class="point-square"></label>
                                             <label for="14-checkbox" class="point-text">Янино</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="15-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="15-checkbox" class="input" name="2-points">
                                             <label for="15-checkbox" class="point-square"></label>
                                             <label for="15-checkbox" class="point-text">Бугры</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="16-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="16-checkbox" class="input" name="2-points">
                                             <label for="16-checkbox" class="point-square"></label>
                                             <label for="16-checkbox" class="point-text">Всеволожск</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="17-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="17-checkbox" class="input" name="2-points">
                                             <label for="17-checkbox" class="point-square"></label>
                                             <label for="17-checkbox" class="point-text">Девяткино</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="18-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="18-checkbox" class="input" name="2-points">
                                             <label for="18-checkbox" class="point-square"></label>
                                             <label for="18-checkbox" class="point-text">Колпино</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="19-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="19-checkbox" class="input" name="2-points">
                                             <label for="19-checkbox" class="point-square"></label>
                                             <label for="19-checkbox" class="point-text">Кудрово</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="20-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="20-checkbox" class="input" name="2-points">
                                             <label for="20-checkbox" class="point-square"></label>
                                             <label for="20-checkbox" class="point-text">Мурино</label>
                                         </li>
 
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="21-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="21-checkbox" class="input" name="2-points">
                                             <label for="21-checkbox" class="point-square"></label>
                                             <label for="21-checkbox" class="point-text">Парнас</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="22-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="22-checkbox" class="input" name="2-points">
                                             <label for="22-checkbox" class="point-square"></label>
                                             <label for="22-checkbox" class="point-text">Сертолово</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="23-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="23-checkbox" class="input" name="2-points">
                                             <label for="23-checkbox" class="point-square"></label>
                                             <label for="23-checkbox" class="point-text">Уткина Заводь</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="24-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="24-checkbox" class="input" name="2-points">
                                             <label for="24-checkbox" class="point-square"></label>
                                             <label for="24-checkbox" class="point-text">Колтуши</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="25-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="25-checkbox" class="input" name="2-points">
                                             <label for="25-checkbox" class="point-square"></label>
                                             <label for="25-checkbox" class="point-text">Новогорелово</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="26-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="26-checkbox" class="input" name="2-points">
                                             <label for="26-checkbox" class="point-square"></label>
                                             <label for="26-checkbox" class="point-text">Рыбацкое</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="27-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="27-checkbox" class="input" name="2-points">
                                             <label for="27-checkbox" class="point-square"></label>
                                             <label for="27-checkbox" class="point-text">Коммендантский</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="28-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="28-checkbox" class="input" name="2-points">
                                             <label for="28-checkbox" class="point-square"></label>
                                             <label for="28-checkbox" class="point-text">Московское шоссе</label>
                                         </li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -487,28 +487,28 @@
                             <div class="checkboxes-part-container-content">
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Тип Квартиры</h3>
-                                    <ul class="checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes" id="flats">
+                                        <li class="checkbox-point" id="29-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="29-checkbox" class="input" name="3-points">
                                             <label for="29-checkbox" class="point-square"></label>
                                             <label for="29-checkbox" class="point-text">Студия</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="30-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="30-checkbox" class="input" name="3-points">
                                             <label for="30-checkbox" class="point-square"></label>
                                             <label for="30-checkbox" class="point-text">1-х комнатная</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="31-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="31-checkbox" class="input" name="3-points">
                                             <label for="31-checkbox" class="point-square"></label>
                                             <label for="31-checkbox" class="point-text">2-х комнатная</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="32-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="32-checkbox" class="input" name="3-points">
                                             <label for="32-checkbox" class="point-square"></label>
                                             <label for="32-checkbox" class="point-text">3-х комнатная</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="33-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="33-checkbox" class="input" name="3-points">
                                             <label for="33-checkbox" class="point-square"></label>
                                             <label for="33-checkbox" class="point-text">4-х комнатная</label>
@@ -517,44 +517,43 @@
                                 </div>
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Стоимость</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="cost">
+                                        <li class="checkbox-point" id="34-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="34-checkbox" class="input" name="4-points">
                                             <label for="34-checkbox" class="point-square"></label>
                                             <label for="34-checkbox" class="point-text">До 2-х млн.</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="35-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="35-checkbox" class="input" name="4-points">
                                             <label for="35-checkbox" class="point-square"></label>
                                             <label for="35-checkbox" class="point-text">От 2-х до 3-х млн.</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="36-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="36-checkbox" class="input" name="4-points">
                                             <label for="36-checkbox" class="point-square"></label>
                                             <label for="36-checkbox" class="point-text">От 3-х до 4-х млн.</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="37-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="37-checkbox" class="input" name="4-points">
                                             <label for="37-checkbox" class="point-square"></label>
                                             <label for="37-checkbox" class="point-text">От 4-х до 5-х млн.</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="38-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="38-checkbox" class="input" name="4-points">
                                             <label for="38-checkbox" class="point-square"></label>
                                             <label for="38-checkbox" class="point-text">Более 5 млн.</label>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Отделка</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="decoration">
+                                        <li class="checkbox-point" id="39-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="39-checkbox" class="input" name="5-points">
                                             <label for="39-checkbox" class="point-square"></label>
                                             <label for="39-checkbox" class="point-text">С отделкой</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="40-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="40-checkbox" class="input" name="5-points">
                                             <label for="40-checkbox" class="point-square"></label>
                                             <label for="40-checkbox" class="point-text">Без отделки</label>
@@ -563,28 +562,28 @@
                                 </div>
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Год сдачи</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="year">
+                                        <li class="checkbox-point" id="41-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="41-checkbox" class="input" name="6-points">
                                             <label for="41-checkbox" class="point-square"></label>
                                             <label for="41-checkbox" class="point-text">2018</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="42-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="42-checkbox" class="input" name="6-points">
                                             <label for="42-checkbox" class="point-square"></label>
                                             <label for="42-checkbox" class="point-text">2019</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="43-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="43-checkbox" class="input" name="6-points">
                                             <label for="43-checkbox" class="point-square"></label>
                                             <label for="43-checkbox" class="point-text">2020</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="44-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="44-checkbox" class="input" name="6-points">
                                             <label for="44-checkbox" class="point-square"></label>
                                             <label for="44-checkbox" class="point-text">2021</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="45-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="45-checkbox" class="input" name="6-points">
                                             <label for="45-checkbox" class="point-square"></label>
                                             <label for="45-checkbox" class="point-text">Сдан</label>
@@ -640,85 +639,82 @@
                             <div class="checkboxes-part-container-content">
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Вариант Оплаты:</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="pay-variant">
+                                        <li class="checkbox-point" id="46-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="46-checkbox" class="input" name="7-points">
                                             <label for="46-checkbox" class="point-square"></label>
                                             <label for="46-checkbox" class="point-text">Ипотека</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="47-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="47-checkbox" class="input" name="7-points">
                                             <label for="47-checkbox" class="point-square"></label>
                                             <label for="47-checkbox" class="point-text">Рассрочка</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="48-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="48-checkbox" class="input" name="7-points">
                                             <label for="48-checkbox" class="point-square"></label>
                                             <label for="48-checkbox" class="point-text">Наличная оплата</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="49-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="49-checkbox" class="input" name="7-points">
                                             <label for="49-checkbox" class="point-square"></label>
                                             <label for="49-checkbox" class="point-text">Материнский капитал</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="50-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="50-checkbox" class="input" name="7-points">
                                             <label for="50-checkbox" class="point-square"></label>
                                             <label for="50-checkbox" class="point-text">Военная ипотека</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="51-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="51-checkbox" class="input" name="7-points">
                                             <label for="51-checkbox" class="point-square"></label>
                                             <label for="51-checkbox" class="point-text">Субсидии</label>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Размер кухни</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="kitchen-size">
+                                        <li class="checkbox-point" id="52-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="52-checkbox" class="input" name="8-points">
                                             <label for="52-checkbox" class="point-square"></label>
                                             <label for="52-checkbox" class="point-text">До 10 м2</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="53-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="53-checkbox" class="input" name="8-points">
                                             <label for="53-checkbox" class="point-square"></label>
                                             <label for="53-checkbox" class="point-text">От 10 до 15 м2</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="54-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="54-checkbox" class="input" name="8-points">
                                             <label for="54-checkbox" class="point-square"></label>
                                             <label for="54-checkbox" class="point-text">Более 15 м2</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="55-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="55-checkbox" class="input" name="8-points">
                                             <label for="55-checkbox" class="point-square"></label>
                                             <label for="55-checkbox" class="point-text">Не имеет значения</label>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div class="four-block-checkboxes">
                                     <h3 class="checkboxes-title">Тип санузла</h3>
-                                    <ul class="checkboxes second-checkboxes">
-                                        <li class="checkbox-point">
+                                    <ul class="checkboxes second-checkboxes" id="bathroom">
+                                        <li class="checkbox-point" id="56-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="56-checkbox" class="input" name="9-points">
                                             <label for="56-checkbox" class="point-square"></label>
                                             <label for="56-checkbox" class="point-text">Раздельный</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="57-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="57-checkbox" class="input" name="9-points">
                                             <label for="57-checkbox" class="point-square"></label>
                                             <label for="57-checkbox" class="point-text">Совмещенный</label>
                                         </li>
-                                        <li class="checkbox-point">
+                                        <li class="checkbox-point" id="58-checkbox-list" onclick="filter(id)">
                                             <input type="radio" id="58-checkbox" class="input" name="9-points">
                                             <label for="58-checkbox" class="point-square"></label>
                                             <label for="58-checkbox" class="point-text">Не имеет значения</label>
                                         </li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -797,6 +793,51 @@
             </div>
             <div class="forms-slider__btn forms-slider__btn-right"></div>
         </section>
+        <!--NEW-->
+        <section class="filters">
+            <div class="inner-container">
+                <div class="filters-content">
+                    <div class="filter-item" id="filter-item-region">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-region')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-location">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-location')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-flat">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-flat')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-cost">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-cost')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-decoration">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-decoration')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-year">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-year')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-pay-variant">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-pay-variant')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-kitchen-size">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-kitchen-size')">&#9746;</button>
+                        <span></span>
+                    </div>
+                    <div class="filter-item" id="filter-item-bathroom">
+                        <button class="filter-button-delete" onclick="deleteFilter('filter-item-bathroom')">&#9746;</button>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--NEW-->
+
 
         <section class="section-slider section-complex-slider">
             <div class="slider__btn slider__btn-left"></div>
@@ -1213,6 +1254,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="common/slick/slick.min.js"></script>
     <script type="text/javascript" src="common/slick/settings.js"></script>
-
+    <script src="js/filtersOptions.js"></script>
 </body>
 </html>

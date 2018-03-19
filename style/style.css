@@ -2578,3 +2578,64 @@ input[type="submit"] {
 .open_popup {
     cursor: pointer;
 }
+
+/*NEW*/
+
+.forms-slider__btn:hover{
+    cursor: pointer;
+}
+
+.filters{
+    width: 100%;
+}
+
+.filters-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-button-delete{
+    border: none;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+}
+
+.filter-item{
+    background-color: #f4f4f4;
+    height: 45px;
+    margin-left: 20px;
+    visibility: hidden;
+    font-family: "Century Gothic";
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .filter-item {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .filter-item {
+        margin-left: 12px;
+        font-size: 12px;
+        padding-right: 18px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .filter-item {
+        margin-left: 10px;
+        font-size: 10px;
+        padding-right: 15px;
+    }
+}
+
+.show-filter{
+    visibility: visible;
+}
+
+/*NEW*/

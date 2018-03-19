@@ -105,7 +105,7 @@
             <div class="inner-container">
                     <div class="main-popular">
                         <article class="side-info">
-                            <input type="radio" class="side-input" name="side-nav" id="flats" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="flats" onclick="fun(id)"/>
                                 <label for="flats" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Квартиры дисконты
@@ -115,7 +115,7 @@
                                     consectetur adipisicing elit, sed do.
                                 </p>
                             </label>
-                            <input type="radio" class="side-input" name="side-nav" id="region-flats" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="region-flats" onclick="fun(id)"/>
                                 <label for="region-flats" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Самые дешевые квартиры по районам
@@ -125,7 +125,7 @@
                                     consectetur adipisicing elit, sed do.
                                 </p>
                             </label>
-                            <input type="radio" class="side-input" name="side-nav" id="mortgage-offers" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="mortgage-offers" onclick="fun(id)"/>
                                 <label for="mortgage-offers" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Самые интересные предложения по ипотеке
@@ -133,7 +133,7 @@
                                 <p class="info-paragraph">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit, sed do.</p>
                             </label>
-                            <input type="radio" class="side-input" name="side-nav" id="installment-plan" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="installment-plan" onclick="fun(id)"/>
                                 <label for="installment-plan" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Самые интересные рассрочки
@@ -141,7 +141,7 @@
                                 <p class="info-paragraph">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit, sed do.</p>
                             </label>
-                            <input type="radio" class="side-input" name="side-nav" id="contractors-offers" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="contractors-offers" onclick="fun(id)"/>
                                 <label for="contractors-offers" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Самые интересные предложения от подрядчиков
@@ -149,7 +149,7 @@
                                 <p class="info-paragraph">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit, sed do.</p>
                             </label>
-                            <input type="radio" class="side-input" name="side-nav" id="flat-sales" onclick="fun(`${id}`)"/>
+                            <input type="radio" class="side-input" name="side-nav" id="flat-sales" onclick="fun(id)"/>
                                 <label for="flat-sales" class="side-info-item">
                                 <h4 class="info-item-title">
                                     Скидки на ремонт и дизайн квартир
@@ -213,25 +213,6 @@
 
 
 
-        <!--REGIONS-->
-
-        <!--<div class="main-info-description">-->
-            <!--<h2 class="main-info-header">-->
-                <!--Квартиры по районам-->
-            <!--</h2>-->
-            <!--<div class="main-info-paragraph">-->
-                <!--<p>-->
-                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit asperna-->
-                <!--</p>-->
-                <!--<br/>-->
-                <!--<p>-->
-                    <!--tur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</div>-->
-
-
-
         <section class="section-contact">
             <div class="inner-container contact-container">
                 <div class="contact-content">
@@ -284,124 +265,7 @@
         </section>
 
         <div class="bottom-content-container" id="bottom-content-container">
-            <section class="section-slider section-complex-slider">
-                <div class="slider__btn slider__btn-left"></div>
-                <div class="complexes-slider">
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img2">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img3">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img2">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img3">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__btn slider__btn-right"></div>
-            </section>
+
         </div>
 
         <section class="section-row">
