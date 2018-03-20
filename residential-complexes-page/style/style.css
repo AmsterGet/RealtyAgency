@@ -348,6 +348,7 @@
     background-color: #24282b;
     padding: 25px;
     text-align: center;
+    border: none;
 }
 @media screen and (max-width: 1549px) {
     .forms-button{
