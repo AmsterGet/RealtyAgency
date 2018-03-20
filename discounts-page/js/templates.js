@@ -517,10 +517,360 @@ let regionContent = _.template('<div class="main-info-description">\n' +
     '                                    </ul>'
 );
 
+let flatSalesTemplate = _.template('<div class="complex-benefits-container">\n' +
+    '                                <div class="main-info-description">\n' +
+    '                                <h2 class="main-info-header">\n' +
+    '                                    Скидки на ремонт и дизайн квартир\n' +
+    '                                </h2>\n' +
+    '                                <div class="main-info-paragraph">\n' +
+    '                                    <p>\n' +
+    '                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit asperna\n' +
+    '                                    </p>\n' +
+    '                                    <br/>\n' +
+    '                                    <p>\n' +
+    '                                        tur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.\n' +
+    '                                    </p>\n' +
+    '                                </div>\n' +
+    '                            </div>\n' +
+    '                                <div class="complex-benefits-block">\n' +
+    '                                    <div class="complex-benefits-title">\n' +
+    '                                        <h4 class="info-item-title">\n' +
+    '                                            При покупке ЖК Белые Ночи\n' +
+    '                                        </h4>\n' +
+    '                                    </div>\n' +
+    '                                    <div class="complex-benefits-content">\n' +
+    '                                        <div class="complex-benefits-left-content">\n' +
+    '                                            <div class="main-info-paragraph">\n' +
+    '                                                <p>\n' +
+    '                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu\n' +
+    '                                                </p>\n' +
+    '                                            </div>\n' +
+    '                                            <div class="complex-description-part">\n' +
+    '                                                <div class="main-info-item complex-benefits-block-item">\n' +
+    '                                                    <div class="main-item-block">\n' +
+    '                                                        <div class="main-item-block-img img1">\n' +
+    '                                                            <div class="block-img-text">\n' +
+    '                                                                <span>13  999 руб.</span>\n' +
+    '                                                            </div>\n' +
+    '                                                        </div>\n' +
+    '                                                        <div class="main-item-block-caption">\n' +
+    '                                                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>\n' +
+    '                                                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,\n' +
+    '                                                                con- sectetur adipisicing elit, sedyte</p>\n' +
+    '                                                        </div>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="description-part-text complex-benefits-block-item">\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                        <div class="complex-benefits-right-content">\n' +
+    '                                            <div class="sale-item">\n' +
+    '                                                <div class="sale-img">\n' +
+    '                                                    <span>АКЦИЯ!</span>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="sale-text">\n' +
+    '                                                    <h5 class="sale-text-title">Название Акции</h5>\n' +
+    '                                                    <p class="sale-text-paragraph">Lorem ipsum dolor sit amet, consectetur\n' +
+    '                                                        adipisic, consecte et dolore magnam aliquam quaerat voluptatem.</p>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                    </div>\n' +
+    '                                </div>\n' +
+    '                                <div class="complex-benefits-block">\n' +
+    '                                    <div class="complex-benefits-title">\n' +
+    '                                        <h4 class="info-item-title">\n' +
+    '                                            При покупке ЖК Белые Ночи\n' +
+    '                                        </h4>\n' +
+    '                                    </div>\n' +
+    '                                    <div class="complex-benefits-content">\n' +
+    '                                        <div class="complex-benefits-left-content">\n' +
+    '                                            <div class="main-info-paragraph">\n' +
+    '                                                <p>\n' +
+    '                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu\n' +
+    '                                                </p>\n' +
+    '                                            </div>\n' +
+    '                                            <div class="complex-description-part">\n' +
+    '                                                <div class="main-info-item complex-benefits-block-item">\n' +
+    '                                                    <div class="main-item-block">\n' +
+    '                                                        <div class="main-item-block-img img1">\n' +
+    '                                                            <div class="block-img-text">\n' +
+    '                                                                <span>13  999 руб.</span>\n' +
+    '                                                            </div>\n' +
+    '                                                        </div>\n' +
+    '                                                        <div class="main-item-block-caption">\n' +
+    '                                                            <h5 class="block-caption-title">ЖК Белые Ночи</h5>\n' +
+    '                                                            <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,\n' +
+    '                                                                con- sectetur adipisicing elit, sedyte</p>\n' +
+    '                                                        </div>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="description-part-text complex-benefits-block-item">\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-info-paragraph">\n' +
+    '                                                        <p>\n' +
+    '                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+    '                                                        </p>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                        <div class="complex-benefits-right-content">\n' +
+    '                                            <div class="sale-item">\n' +
+    '                                                <div class="sale-img">\n' +
+    '                                                    <span>АКЦИЯ!</span>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="sale-text">\n' +
+    '                                                    <h5 class="sale-text-title">Название Акции</h5>\n' +
+    '                                                    <p class="sale-text-paragraph">Lorem ipsum dolor sit amet, consectetur\n' +
+    '                                                        adipisic, consecte et dolore magnam aliquam quaerat voluptatem.</p>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                    </div>\n' +
+    '                                </div>\n' +
+    '                            </div>\n'
+);
+
+let contractorsOffersTemplate = _.template('<div class="contractors-offers-block">\n' +
+    '                                <div class="main-info-description">\n' +
+    '                                    <h2 class="main-info-header">\n' +
+    '                                        Самые интересные<br/>\n' +
+    '                                        предложения от подрядчиков\n' +
+    '                                    </h2>\n' +
+    '                                    <div class="main-info-paragraph">\n' +
+    '                                        <p>\n' +
+    '                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit asperna\n' +
+    '                                        </p>\n' +
+    '                                    </div>\n' +
+    '                                </div>\n' +
+    '                                <ul class="contractors-offers-list">\n' +
+    '                                    <li class="contractors-offers-list-item">\n' +
+    '                                        <div class="offers-left-block">\n' +
+    '                                            <div class="main-info-item">\n' +
+    '                                                <div class="main-item-block">\n' +
+    '                                                    <div class="main-item-block-img img1">\n' +
+    '                                                        <div class="block-img-text">\n' +
+    '                                                            <span>13  999 руб.</span>\n' +
+    '                                                        </div>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-item-block-caption">\n' +
+    '                                                        <h5 class="block-caption-title">ЖК Белые Ночи</h5>\n' +
+    '                                                        <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,\n' +
+    '                                                            con- sectetur adipisicing elit, sedyte</p>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '\n' +
+    '                                        <div class="offers-right-block">\n' +
+    '                                            <div class="main-info-description">\n' +
+    '                                                <h2 class="main-info-header">\n' +
+    '                                                    ЖК Белые Ночи\n' +
+    '                                                </h2>\n' +
+    '                                                <div class="main-info-paragraph">\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                    <br/>\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                            <div class="info-blocks">\n' +
+    '                                                <div class="info-blocks-row first-row">\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Ипотека\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            100% оплаты\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Рассрочка\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="info-blocks-row second-row">\n' +
+    '                                                    <div class="contact-interplay">\n' +
+    '                                                        <button class="open_popup more-button left-button" onclick="popup(\'request\')">\n' +
+    '                                                            Оставить заявку\n' +
+    '                                                        </button>\n' +
+    '                                                        <button class="open_popup more-button interplay-right-button first-color-text" onclick="popup(\'request\')">\n' +
+    '                                                            Узнать больше\n' +
+    '                                                        </button>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                    </li>\n' +
+    '                                    <li class="contractors-offers-list-item">\n' +
+    '                                        <div class="offers-left-block">\n' +
+    '                                            <div class="main-info-item">\n' +
+    '                                                <div class="main-item-block">\n' +
+    '                                                    <div class="main-item-block-img img1">\n' +
+    '                                                        <div class="block-img-text">\n' +
+    '                                                            <span>13  999 руб.</span>\n' +
+    '                                                        </div>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-item-block-caption">\n' +
+    '                                                        <h5 class="block-caption-title">ЖК Белые Ночи</h5>\n' +
+    '                                                        <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,\n' +
+    '                                                            con- sectetur adipisicing elit, sedyte</p>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '\n' +
+    '                                        <div class="offers-right-block">\n' +
+    '                                            <div class="main-info-description">\n' +
+    '                                                <h2 class="main-info-header">\n' +
+    '                                                    ЖК Белые Ночи\n' +
+    '                                                </h2>\n' +
+    '                                                <div class="main-info-paragraph">\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                    <br/>\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                            <div class="info-blocks">\n' +
+    '                                                <div class="info-blocks-row first-row">\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Ипотека\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            100% оплаты\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Рассрочка\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="info-blocks-row second-row">\n' +
+    '                                                    <div class="contact-interplay">\n' +
+    '                                                        <button class="open_popup more-button left-button" onclick="popup(\'request\')">\n' +
+    '                                                            Оставить заявку\n' +
+    '                                                        </button>\n' +
+    '                                                        <button class="open_popup more-button interplay-right-button first-color-text" onclick="popup(\'request\')">\n' +
+    '                                                            Узнать больше\n' +
+    '                                                        </button>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                    </li>\n' +
+    '                                    <li class="contractors-offers-list-item">\n' +
+    '                                        <div class="offers-left-block">\n' +
+    '                                            <div class="main-info-item">\n' +
+    '                                                <div class="main-item-block">\n' +
+    '                                                    <div class="main-item-block-img img1">\n' +
+    '                                                        <div class="block-img-text">\n' +
+    '                                                            <span>13  999 руб.</span>\n' +
+    '                                                        </div>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="main-item-block-caption">\n' +
+    '                                                        <h5 class="block-caption-title">ЖК Белые Ночи</h5>\n' +
+    '                                                        <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,\n' +
+    '                                                            con- sectetur adipisicing elit, sedyte</p>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '\n' +
+    '                                        <div class="offers-right-block">\n' +
+    '                                            <div class="main-info-description">\n' +
+    '                                                <h2 class="main-info-header">\n' +
+    '                                                    ЖК Белые Ночи\n' +
+    '                                                </h2>\n' +
+    '                                                <div class="main-info-paragraph">\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                    <br/>\n' +
+    '                                                    <p>\n' +
+    '                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident\n' +
+    '                                                    </p>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                            <div class="info-blocks">\n' +
+    '                                                <div class="info-blocks-row first-row">\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Ипотека\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            100% оплаты\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                    <div class="info-block">\n' +
+    '                                                        <h5 class="info-block-caption">\n' +
+    '                                                            Рассрочка\n' +
+    '                                                        </h5>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                                <div class="info-blocks-row second-row">\n' +
+    '                                                    <div class="contact-interplay">\n' +
+    '                                                        <button class="open_popup more-button left-button" onclick="popup(\'request\')">\n' +
+    '                                                            Оставить заявку\n' +
+    '                                                        </button>\n' +
+    '                                                        <button class="open_popup more-button interplay-right-button first-color-text" onclick="popup(\'request\')">\n' +
+    '                                                            Узнать больше\n' +
+    '                                                        </button>\n' +
+    '                                                    </div>\n' +
+    '                                                </div>\n' +
+    '                                            </div>\n' +
+    '                                        </div>\n' +
+    '                                    </li>\n' +
+    '                                </ul>\n' +
+    '                            </div>'
+);
+
 let contentContainer = document.querySelector("#content-container");
 let regionsContainer = null;
 let bottomContentContainer = document.querySelector("#bottom-content-container");
 bottomContentContainer.innerHTML = complexSliderTemplate();
+initSlick();
 let previousId = null;
 
 function fun(targetId) {
@@ -538,6 +888,7 @@ function fun(targetId) {
         case "region-flats":
             contentContainer.innerHTML = regionFlatsTemplate();
             bottomContentContainer.innerHTML = complexSliderTemplate();
+            initSlick();
             regionsContainer = document.querySelector('#region-content');
             break;
         case "mortgage-offers":
@@ -547,14 +898,16 @@ function fun(targetId) {
         case "installment-plan":
             contentContainer.innerHTML = flatsTemplate();
             bottomContentContainer.innerHTML = complexSliderTemplate();
+            initSlick();
             break;
         case "contractors-offers":
-            contentContainer.innerHTML = flatsTemplate();
+            contentContainer.innerHTML = contractorsOffersTemplate();
             bottomContentContainer.innerHTML = salesTemplate();
             break;
         case "flat-sales":
-            contentContainer.innerHTML = flatsTemplate();
+            contentContainer.innerHTML = flatSalesTemplate();
             bottomContentContainer.innerHTML = complexSliderTemplate();
+            initSlick();
             break;
         case "first-region":
             regionsContainer.innerHTML = regionContent();

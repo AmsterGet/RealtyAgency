@@ -833,6 +833,11 @@
     flex-direction: column;
 }
 
+.changeable-container-item{
+    display: flex;
+    flex-direction: column;
+}
+
 .first-block-main{
     display: flex;
     justify-content: space-between;
@@ -973,6 +978,15 @@
     margin-top: 60px;
 }
 
+.radio-buttons{
+    display: none;
+  }
+
+.radio-buttons:checked + .button-4-page{
+    background-color: #2a2c2b;
+    color: white;
+}
+
 .button-4-page{
     width: 31.5%;
     height: 225px;
@@ -984,8 +998,9 @@
     transition: all .4s ease;
     margin-top: 40px;
 }
+
 .button-4-page:hover{
-    background-color: #2a2c2b;
+    background-color: darkgray;
     color: white;
     cursor: pointer;
 }
