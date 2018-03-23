@@ -94,7 +94,7 @@
 
 
 .logo {
-    background: url(../img/logo.png) 100% 100% no-repeat;
+    background: url(../../common/images/logo.png) 100% 100% no-repeat;
     background-size: cover;
     width: 100px;
     height: 65px;
@@ -478,10 +478,11 @@
     }
 }
 
+
 .feedback-block-part{
     width: 0;
     height: 0;
-    border-bottom: 605px solid #24282b;
+    border-bottom: 601px solid #24282b;
     border-left: 190px solid transparent;
     position: absolute;
     top: 0;
@@ -495,14 +496,14 @@
 }
 @media screen and (max-width: 1400px) {
     .feedback-block-part{
-        border-bottom: 419px solid #24282b;
+        border-bottom: 415px solid #24282b;
         border-left: 150px solid transparent;
         right: 46.9%;
     }
 }
 @media screen and (max-width: 1199px) {
     .feedback-block-part{
-        border-bottom: 398px solid #24282b;
+        border-bottom: 394px solid #24282b;
         border-left: 100px solid transparent;
         right: 46.8%;
     }
@@ -1393,7 +1394,7 @@ input[type="submit"] {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: space-around;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

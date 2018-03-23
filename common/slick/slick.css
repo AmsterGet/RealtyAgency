@@ -32,13 +32,6 @@
 .slick-list:focus {
     outline: none;
 }
-.slider-item-block {
-    margin: 0 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 .slick-active .cape {
     opacity: 0;

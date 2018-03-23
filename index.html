@@ -69,6 +69,7 @@
                             <li><a href="./discounts-page/index.html">Дисконты</a></li>
                             <li><a href="./residential-complexes-page/index.html">Жилые комплексы</a></li>
                             <li><a href="./helpful-page/index.html">Полезное по недвижимости</a></li>
+                            <li><a href="../about-us-page/index.html">О нас</a></li>
                             <li class="open_popup" onclick="popup('request')">Обратная связь</li>
                             <li class="number"><a href="tel:">+ 8 000 000 00 00</a></li>
                         </ul>
@@ -103,8 +104,8 @@
                             <button class="open_popup more-button left-button" onclick="popup('request')">
                                 Оставить заявку
                             </button>
-                            <button class="open_popup more-button right-button" onclick="popup('request')">
-                                Узнать больше
+                            <button class="open_popup more-button right-button" onclick="scrollToForm()">
+                                Подобрать варианты
                             </button>
                         </div>
                     </div>
@@ -816,137 +817,78 @@
 
 
         <section class="section-slider section-complex-slider">
-            <div class="slider__btn slider__btn-left"></div>
-                <div class="complexes-slider">
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
+            <div class="inner-container">
+                <h4 class="info-item-title section-complex-header">
+                    Результаты фильтрации (<span class="info-item-title complexes-quantity">3</span>)
+                </h4>
+                <div class="complexes-slider-container">
+                    <div class="complexes-slider">
+                        <div class="slider-item-block">
+                            <div class="slider-item-block-container">
+                                <div class="main-item-block-img img1">
+                                    <div class="block-img-text">
+                                        <span>13  999 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="main-item-block-caption">
+                                    <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                                    <p class="info-paragraph">
+                                        Lorem ipsum dolor sit amet,
+                                        con- sectetur adipisicing elit, sedyte
+                                    </p>
                                 </div>
                             </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img2">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
+                        <div class="slider-item-block">
+                            <div class="slider-item-block-container">
+                                <div class="main-item-block-img img3">
+                                    <div class="block-img-text">
+                                        <span>13  999 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="main-item-block-caption">
+                                    <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                                    <p class="info-paragraph">
+                                        Lorem ipsum dolor sit amet,
+                                        con- sectetur adipisicing elit, sedyte
+                                    </p>
                                 </div>
                             </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img3">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
+                        <div class="slider-item-block">
+                            <div class="slider-item-block-container">
+                                <div class="main-item-block-img img1">
+                                    <div class="block-img-text">
+                                        <span>13  999 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="main-item-block-caption">
+                                    <h5 class="block-caption-title">ЖК Белые Ночи</h5>
+                                    <p class="info-paragraph">
+                                        Lorem ipsum dolor sit amet,
+                                        con- sectetur adipisicing elit, sedyte
+                                    </p>
                                 </div>
                             </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img2">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
+                        <div class="slider-item-block last-block">
+                            <div class="slider-item-block-container">
+                                <div class="main-item-block-img last-slide">
+                                    <button class="complexes-slider-button interplay-right-button" onclick="scrollToForm('complexes-slider-button')">
+                                        Оставить заявку
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
+                                <div class="main-item-block-caption">
+                                    <h5 class="block-caption-title">Хотите узнать больше?</h5>
+                                    <p class="info-paragraph">
+                                        Заполните форму или свяжитесь с нами
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img3">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img img1">
-                                <div class="block-img-text">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph">
-                                    Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item-block last-block">
-                        <div class="slider-item-block-container">
-                            <div class="main-item-block-img last-slide">
-                                <button class="complexes-slider-button interplay-right-button">
-                                    Оставить заявку
-                                </button>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">Хотите узнать больше?</h5>
-                                <p class="info-paragraph">
-                                    Заполните форму или свяжитесь с нами
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div class="slider__btn slider__btn-right"></div>
+            </div>
         </section>
 
         <section class="section-contact">
@@ -1004,7 +946,7 @@
             <div class="staff-slider">
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1017,7 +959,7 @@
                 </div>
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1030,7 +972,7 @@
                 </div>
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1043,7 +985,7 @@
                 </div>
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1056,7 +998,7 @@
                 </div>
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1069,7 +1011,7 @@
                 </div>
                 <div class="staff-item-container">
                     <div class="staff-item">
-                        <img src="img/staff-item-img.png" class="staff-item-img"/>
+                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
                         <div class="staff-item-description">
                             <h5 class="block-caption-title">Алексей Карупин</h5>
                             <p class="info-paragraph">
@@ -1205,6 +1147,15 @@
         <footer class="footer">
             <div class="inner-container">
                 <div class="footer-text">
+                    <div class="copyright-block">
+                        <span class="copyright-years">
+                            2017-2018
+                        </span>
+                        <span class="copyright-text">
+                            Все права защищены
+                        </span>
+                    </div>
+
                     <div class="communication-block">
                         <span class="communication-info">
                             По вопросам сотрудничества
@@ -1215,19 +1166,10 @@
                         </span>
                     </div>
 
-                    <div class="copyright-block">
-                        <span class="copyright-years">
-                            2017-2018
-                        </span>
-                        <span class="copyright-text">
-                            Все права защищены
-                        </span>
-                    </div>
-
-                    <div class="company-developer-block">
-                        <img class="logo-developers" src="img/PraxisLogo.png" alt="Developers Logo">
+                    <a href="http://praxis-media.by/" class="company-developer-block">
+                        <img class="logo-developers" src="common/images/PraxisLogo.png" alt="Developers Logo">
                         <span>Praxis Media Studio</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </footer>

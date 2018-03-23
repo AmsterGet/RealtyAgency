@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../common/css/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="../common/slick/slick.css">
     <title>Title</title>
 </head>
 <body>
 <div class="wrapper">
-
     <div class="popup_overlay" onClick="popup_out();"></div>
     <div class="popup" id="request">
         <div class="popup_close noselect" onClick="popup_out();"></div>
         <!--Обратная связь-->
-        <div class="block-forms">
+        <div class="block-forms-popup">
             <div class="form-header feedback-header">
                 <div class="header-part-title">
                     <h3><span class="green-header-title">Lorem ipsum </span>dolor sit amet</h3>
@@ -64,9 +64,9 @@
                     <ul class="header-list">
                         <li><a href="../index.html">Главная</a></li>
                         <li><a href="../discounts-page/index.html">Дисконты</a></li>
-                        <li><a href="../residential-complexes-page/index.html" class="active-page">Жилые комплексы</a></li>
-                        <li><a href="../helpful-page/index.html">Полезное по недвижимости</a></li>
-                        <li><a href="../about-us-page/index.html">О нас</a></li>
+                        <li><a href="../residential-complexes-page/index.html">Жилые комплексы</a></li>
+                        <li><a href="../helpful-page/index.html" >Полезное по недвижимости</a></li>
+                        <li><a href="./index.html" class="active-page">О нас</a></li>
                         <li class="open_popup" onclick="popup('request')">Обратная связь</li>
                         <li class="number"><a href="tel:">+ 8 000 000 00 00</a></li>
                     </ul>
@@ -88,89 +88,101 @@
     <section class="banner-third-page">
         <div class="inner-container">
             <div class="banner-third-page-content">
-                <div class="banner-third-page-title">
-                    <h2>Популярные</h2>
-                    <h2>Жилые Комплексы</h2>
+                <div class="banner-third-page-title banner-four-page-title">
+                    <h2>О нас</h2>
                 </div>
                 <div class="banner-third-page-caption">
-                    <span>Здесь собраны самые интересные акции и предложения по жилым комплексам. Где можно купить
-                        квартиру  в определенном районе города. Самые низкие процентные
-                        ставки и первый взнос  по ипотеки. Выгодные условия от наших партнеров
-                        подрядчиков по квартирам.</span>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nostrum porro quae similique. Ad aperiam aspernatur assumenda eligendi exercitationem fugit illum molestias quia repellendus temporibus? Ab iusto nihil numquam repellat.
+                    </span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="open-flat">
-        <div class="inner-container">
-            <div class="open-flat-content">
-                <div class="first-part-open">
-                    <div class="img-first-open"></div>
-                    <div class="text-block-first-open">
-                        <div class="first-text-header">
-                            <h3>ЖК Белые Ночи</h3>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>dolor sit amet, consectetur adipisicing elit,
-                                sedyte Lorem ipsum dolor sit amet, consectetur</span>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat. Duis aute irure dolor in repreh</span>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>enderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</span>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum. Sed ut perspiciatis unde omnis iste
-                                natus error sit voluptatem s eos qui ratione voluptatem
-                                sequi nesciunt. Neque porro quisquam</span>
-                        </div>
-                        <div class="first-block-text">
-                            <h4 class="first-block-text-title">Характеристики комплекса</h4>
-                            <span>qui dolorem ipsum quia dolor sit amet, coneius modi
-                                tempora incidunt ut labore et dolore magnam aliquam quaerat
-                                voluptatem.</span>
-                        </div>
+
+    <section class="section-slider section-staff-slider">
+        <h4 class="info-item-title section-complex-header">
+            Наши партнёры
+        </h4>
+        <div class="staff-slider">
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
                     </div>
                 </div>
-                <div class="switch-panel">
-                    <input type="radio" id="first-radio-open" class="input-open" checked onclick="foo()" name="radios-open">
-                    <label for="first-radio-open" class="switch-panel-button">
-                        <h5 class="switch-button-title">Описание ЖК</h5>
-                        <p class="switch-button-caption">Lorem ipsum dolor sit amet.</p>
-                    </label>
-
-                    <input type="radio" id="second-radio-open" class="input-open" onclick="foo()" name="radios-open">
-                    <label for="second-radio-open" class="switch-panel-button">
-                        <h5 class="switch-button-title">Квартиры и Планировки</h5>
-                        <p class="switch-button-caption">Lorem ipsum dolor sit amet.</p>
-                    </label>
-
-                    <input type="radio" id="third-radio-open" class="input-open" onclick="foo()" name="radios-open">
-                    <label for="third-radio-open" class="switch-panel-button">
-                        <h5 class="switch-button-title">Скидки и Акции</h5>
-                        <p class="switch-button-caption">Lorem ipsum dolor sit amet.</p>
-                    </label>
-                    <div class="switch-price">
-                        <span>13  999 руб.</span>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
                     </div>
                 </div>
-
-                <div class="flat-changeable" id="flat-changeable">
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
                 </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
             </div>
         </div>
     </section>
@@ -226,62 +238,94 @@
         </div>
     </section>
 
-    <section class="block-set-flats">
-        <div class="inner-container">
-            <div class="block-set-flats-content">
-                <div class="card-flat-set">
-                    <a href="./index.html">
-                        <div class="main-item-block">
-                            <div class="main-item-block-img flat-img-1 main-item-img-set">
-                                <div class="block-img-text img-text-set-flats">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte</p>
-                            </div>
-                        </div>
-                    </a>
+    <section class="section-slider section-staff-slider">
+        <h4 class="info-item-title section-complex-header">
+            Наши сотрудники
+        </h4>
+        <div class="staff-slider">
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
                 </div>
-                <div class="card-flat-set">
-                    <a href="./index.html">
-                        <div class="main-item-block">
-                            <div class="main-item-block-img flat-img-2 main-item-img-set">
-                                <div class="block-img-text img-text-set-flats">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
                 </div>
-                <div class="card-flat-set">
-                    <a href="./index.html">
-                        <div class="main-item-block">
-                            <div class="main-item-block-img flat-img-3 main-item-img-set">
-                                <div class="block-img-text img-text-set-flats">
-                                    <span>13  999 руб.</span>
-                                </div>
-                            </div>
-                            <div class="main-item-block-caption">
-                                <h5 class="block-caption-title">ЖК Белые Ночи</h5>
-                                <p class="info-paragraph block-caption-paragraph">Lorem ipsum dolor sit amet,
-                                    con- sectetur adipisicing elit, sedyte</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
                 </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
+            </div>
+            <div class="staff-item-container">
+                <div class="staff-item">
+                    <img src="img/staff-item-img.png" class="staff-item-img"/>
+                    <div class="staff-item-description">
+                        <h5 class="block-caption-title">Алексей Карупин</h5>
+                        <p class="info-paragraph">
+                            Lorem ipsum dolor sit amet,
+                            con- sectetur adipisicing elit, sedyte
+                        </p>
+                    </div>
+                </div>
+                <div class="cape"></div>
             </div>
         </div>
     </section>
 
-    <section class="section-row">
+
+    <section class="section-row section-row-helper">
         <div class="inner-container row-container">
             <div class="row-content">
                 <div class="main-item-description">
@@ -331,8 +375,6 @@
     </footer>
 
 </div>
-<script src="../common/js/lodash.js"></script>
-<script src="js/complexTemplates.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../common/slick/slick.min.js"></script>
 <script type="text/javascript" src="../common/slick/settings.js"></script>

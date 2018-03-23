@@ -1,101 +1,8 @@
+function getSlides(selector) {
+    return document.querySelectorAll(selector) || [];
+}
+
 function initSlick() {
-    $('.complexes-slider').slick({
-        infinite: false,
-        speed: 1200,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        initialSlide: 2,
-        draggable: false,
-        swipe: false,
-        touchMove: false,
-        prevArrow: '.slider__btn-left',
-        nextArrow: '.slider__btn-right',
-        // swipeToSlide: true,
-        // focusOnSelect: true,
-        centerMode: true,
-        centerPadding: '0px',
-        // arrows: false,
-
-        responsive: [
-            {
-                breakpoint: 2490,
-                settings: {
-                    centerPadding: '260px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 2000,
-                settings: {
-                    centerPadding: '200px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1780,
-                settings: {
-                    centerPadding: '140px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1549,
-                settings: {
-                    centerPadding: '100px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1450,
-                settings: {
-                    centerPadding: '60px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1300,
-                settings: {
-                    centerPadding: '10px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1270,
-                settings: {
-                    centerPadding: '0px',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // arrows: false
-                }
-            },
-            {
-                breakpoint: 1100,
-                settings: {
-                    centerPadding: '50px',
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    // arrows: false
-                }
-            }
-        ]
-    });
-
-    function getSlides(selector) {
-        return document.querySelectorAll(selector) || [];
-    }
-
     $('.slider__btn-left').click(function () {
         var slides = getSlides('.slider-item-block');
         if (slides[1].classList.contains('slick-current')) {
@@ -260,13 +167,111 @@ initSlick();
       $('.popup').removeClass('activePopup');
   }
 
-  $('.complexes-slider-button').click(function () {
-      var slides=getSlides('.block-forms');
+  function scrollToForm(elementClass) {
+      var slides = getSlides('.block-forms');
       var slider = $('.forms-slider');
-      slider.slick('slickGoTo',slides.length-1);
+      if (elementClass==='complexes-slider-button') {
+          slider.slick('slickGoTo',slides.length-1);
+      }
       $('html, body').animate({scrollTop: slider.offset().top}, 700);
-  });
+  }
 
+  // $('.complexes-slider-button').click(function () {
+  //
+  // });
+
+// $('.complexes-slider').slick({
+//     infinite: false,
+//     speed: 1200,
+//     slidesToShow: 5,
+//     slidesToScroll: 1,
+//     initialSlide: 2,
+//     draggable: false,
+//     swipe: false,
+//     touchMove: false,
+//     prevArrow: '.slider__btn-left',
+//     nextArrow: '.slider__btn-right',
+//     // swipeToSlide: true,
+//     // focusOnSelect: true,
+//     centerMode: true,
+//     centerPadding: '0px',
+//     // arrows: false,
+//
+//     responsive: [
+//         {
+//             breakpoint: 2490,
+//             settings: {
+//                 centerPadding: '260px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 2000,
+//             settings: {
+//                 centerPadding: '200px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1780,
+//             settings: {
+//                 centerPadding: '140px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1549,
+//             settings: {
+//                 centerPadding: '100px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1450,
+//             settings: {
+//                 centerPadding: '60px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1300,
+//             settings: {
+//                 centerPadding: '10px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1270,
+//             settings: {
+//                 centerPadding: '0px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 // arrows: false
+//             }
+//         },
+//         {
+//             breakpoint: 1100,
+//             settings: {
+//                 centerPadding: '50px',
+//                 slidesToShow: 3,
+//                 slidesToScroll: 3,
+//                 // arrows: false
+//             }
+//         }
+//     ]
+// });
 
 
 
