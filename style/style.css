@@ -19,6 +19,20 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.scrollup{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    opacity: 0.9;
+    bottom: 30px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url(../img/icon_top.png) no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
 .wrapper{
     width: 100%;
     display: -webkit-box;

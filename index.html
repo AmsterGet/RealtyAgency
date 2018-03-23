@@ -6,9 +6,27 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="common/slick/slick.css">
     <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+
+            $('.scrollup').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+
+        });
+    </script>
 </head>
 <body>
-
     <div class="wrapper">
 
 
@@ -1178,5 +1196,6 @@
     <script type="text/javascript" src="common/slick/slick.min.js"></script>
     <script type="text/javascript" src="common/slick/settings.js"></script>
     <script src="js/filtersOptions.js"></script>
+    <a href="#" class="scrollup">Наверх</a>
 </body>
 </html>
