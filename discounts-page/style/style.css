@@ -19,6 +19,24 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.active-page{
+    color: #44b759;
+}
+
+.company-developer-block{
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo-developers{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
 .wrapper{
     width: 100%;
     display: -webkit-box;
@@ -629,7 +647,7 @@ input[type="submit"] {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
