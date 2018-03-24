@@ -1,34 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="common/slick/slick.css">
     <title>Title</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 100) {
-                    $('.scrollup').fadeIn();
-                } else {
-                    $('.scrollup').fadeOut();
-                }
-            });
-
-            $('.scrollup').click(function(){
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-
-        });
-    </script>
 </head>
 <body>
     <div class="wrapper">
-
 
         <div class="popup_overlay" onClick="popup_out();"></div>
         <div class="popup" id="request">
@@ -76,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="scrollup">Наверх</a>
 
         <header class="header">
             <div class="inner-container">
@@ -87,7 +70,7 @@
                             <li><a href="./discounts-page/index.html">Дисконты</a></li>
                             <li><a href="./residential-complexes-page/index.html">Жилые комплексы</a></li>
                             <li><a href="./helpful-page/index.html">Полезное по недвижимости</a></li>
-                            <li><a href="../about-us-page/index.html">О нас</a></li>
+                            <li><a href="./about-us-page/index.html">О нас</a></li>
                             <li class="open_popup" onclick="popup('request')">Обратная связь</li>
                             <li class="number"><a href="tel:">+ 8 000 000 00 00</a></li>
                         </ul>
@@ -834,13 +817,13 @@
         <!--NEW-->
 
 
-        <section class="section-slider section-complex-slider">
+        <section class="section-complexes">
             <div class="inner-container">
                 <h4 class="info-item-title section-complex-header">
                     Результаты фильтрации (<span class="info-item-title complexes-quantity">3</span>)
                 </h4>
-                <div class="complexes-slider-container">
-                    <div class="complexes-slider">
+                <div class="complexes-block-container">
+                    <div class="complexes-block">
                         <div class="slider-item-block">
                             <div class="slider-item-block-container">
                                 <div class="main-item-block-img img1">
@@ -892,7 +875,7 @@
                         <div class="slider-item-block last-block">
                             <div class="slider-item-block-container">
                                 <div class="main-item-block-img last-slide">
-                                    <button class="complexes-slider-button interplay-right-button" onclick="scrollToForm('complexes-slider-button')">
+                                    <button class="complexes-block-button interplay-right-button" onclick="scrollToForm('complexes-slider-button')">
                                         Оставить заявку
                                     </button>
                                 </div>
@@ -956,89 +939,6 @@
                                + 8 (000) 000 00 00
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-slider section-staff-slider">
-            <div class="staff-slider">
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
-                </div>
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
-                </div>
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
-                </div>
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
-                </div>
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
-                </div>
-                <div class="staff-item-container">
-                    <div class="staff-item">
-                        <img src="about-us-page/img/staff-item-img.png" class="staff-item-img"/>
-                        <div class="staff-item-description">
-                            <h5 class="block-caption-title">Алексей Карупин</h5>
-                            <p class="info-paragraph">
-                                Lorem ipsum dolor sit amet,
-                                con- sectetur adipisicing elit, sedyte
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cape"></div>
                 </div>
             </div>
         </section>
@@ -1196,6 +1096,5 @@
     <script type="text/javascript" src="common/slick/slick.min.js"></script>
     <script type="text/javascript" src="common/slick/settings.js"></script>
     <script src="js/filtersOptions.js"></script>
-    <a href="#" class="scrollup">Наверх</a>
 </body>
 </html>
