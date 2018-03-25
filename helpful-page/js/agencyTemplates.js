@@ -533,7 +533,6 @@ function renderFourPage() {
             return;
         } else{
             variable = true;
-            debugger;
             setTimeout(() => {
                 root.innerHTML = template2();
                 addAnimateClass(2);
@@ -544,7 +543,6 @@ function renderFourPage() {
         if(currentNode.id ==="template-2"){
             return;
         } else{
-            debugger;
             currentNode.classList.add("up-animate");
             setTimeout(() => {
                 root.innerHTML = template2();
