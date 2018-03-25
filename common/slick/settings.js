@@ -208,6 +208,15 @@ function initSlick() {
 
 initSlick();
 
+  function scrollToForm(elementClass) {
+    var slides = getElements('.block-forms');
+    var slider = $('.forms-slider');
+    if (elementClass==='complexes-slider-button') {
+        slider.slick('slickGoTo',slides.length-1);
+    }
+    $('html, body').animate({scrollTop: slider.offset().top}, 700);
+  }
+
   function popup(id) {
       $('.popup_overlay').show();
       $('#'+id).addClass('activePopup');
@@ -241,12 +250,3 @@ initSlick();
     });
 
   });
-
-  function scrollToForm(elementClass) {
-      var slides = getElements('.block-forms');
-      var slider = $('.forms-slider');
-      if (elementClass==='complexes-slider-button') {
-          slider.slick('slickGoTo',slides.length-1);
-      }
-      $('html, body').animate({scrollTop: slider.offset().top}, 700);
-  }
