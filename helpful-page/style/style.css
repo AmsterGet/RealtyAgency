@@ -328,10 +328,62 @@
 }
 
 .changeable-container-item{
-    display: flex;
-    flex-direction: column;
     margin-top: 60px;
 }
+
+.changeable-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.down-animate{
+    animation: down-animate 0.4s linear;
+    visibility: initial;
+}
+
+@keyframes down-animate {
+    0% {
+        transform: translateY(-1000px);
+        visibility: hidden;
+    }
+    50%{
+        transform: translateY(-500px);
+        visibility: hidden;
+    }
+    98%{
+        transform: translateY(-20px);
+        visibility: initial;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: initial;
+    }
+}
+
+.up-animate{
+    animation: up-animate 0.4s linear;
+    visibility: hidden;
+}
+
+@keyframes up-animate {
+    0% {
+        transform: translateY(0);
+        visibility: initial;
+    }
+    2%{
+        transform: translateY(-20px);
+        visibility: initial;
+    }
+    50%{
+        transform: translateY(-500px);
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(-1000px);
+        visibility: hidden;
+    }
+}
+
 
 .first-block-main{
     display: flex;
@@ -470,6 +522,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 5;
 }
 
 .radio-buttons{
