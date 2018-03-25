@@ -396,6 +396,6 @@ input[type="submit"] {
     text-indent: -9999px;
     background: url(../images/icon_top.png) no-repeat;
     background-size: cover;
-    z-index: 2;
+    z-index: 6;
     border-radius: 50%;
 }
