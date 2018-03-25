@@ -1,5 +1,8 @@
+let variable = false;
+
 function renderFourPage() {
-    let template1 = _.template('<div class="first-block-main">\n' +
+    let template1 = _.template('<div class="changeable-item" id="template-1">\n' +
+        '                     <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Справочник районов СПБ</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -79,9 +82,11 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                        </div>\n' +
         '                    </div>');
 
-    let template2 = _.template('<div class="first-block-main">\n' +
+    let template2 = _.template('<div class="changeable-item" id="template-2">\n' +
+        '                       <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Аналитика Недвижимости</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -161,9 +166,11 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                        </div>\n' +
         '                    </div>');
 
-    let template3 = _.template('<div class="first-block-main">\n' +
+    let template3 = _.template('<div class="changeable-item" id="template-3">\n' +
+        '                       <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Ипотека и финансы</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -243,9 +250,11 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                       </div>\n' +
         '                    </div>');
 
-    let template4 = _.template('<div class="first-block-main">\n' +
+    let template4 = _.template('<div class="changeable-item" id="template-4">\n' +
+        '                       <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Новости недвижимости</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -325,9 +334,11 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                       </div>\n' +
         '                    </div>');
 
-    let template5 = _.template('<div class="first-block-main">\n' +
+    let template5 = _.template('<div class="changeable-item" id="template-5">\n' +
+        '                       <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Самое обсуждаемое</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -407,9 +418,11 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                       </div>\n' +
         '                    </div>');
 
-    let template6 = _.template('<div class="first-block-main">\n' +
+    let template6 = _.template('<div class="changeable-item" id="template-6">\n' +
+        '                       <div class="first-block-main">\n' +
         '                        <div class="text-first-block-main">\n' +
         '                            <h2 class="title-four-main">Экспертное мнение</h2>\n' +
         '                            <p class="paragraph-four-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
@@ -489,6 +502,7 @@ function renderFourPage() {
         '                                consectetur adipisicing elit, sed do eiusmod tem.\n' +
         '                            </p>\n' +
         '                        </div>\n' +
+        '                    </div>\n' +
         '                    </div>');
 
     let root = document.getElementById("changeable-container");
@@ -499,28 +513,96 @@ function renderFourPage() {
     let radio4 = document.getElementById("radio4");
     let radio5 = document.getElementById("radio5");
     let radio6 = document.getElementById("radio6");
-
+    let currentNode = root.childNodes[0];
 
 
     if(radio1.checked){
-        root.innerHTML = template1();
-    } else if(radio2.checked){
-        root.innerHTML = template2();
+        if(currentNode.id ==="template-1"){
+            return;
+        } else{
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template1();
+                addAnimateClass(1);
+            },300);
+        }
+
+    }
+    else if(radio2.checked && !variable){
+        if(currentNode.id ==="template-2"){
+            return;
+        } else{
+            variable = true;
+            debugger;
+            setTimeout(() => {
+                root.innerHTML = template2();
+                addAnimateClass(2);
+            },300);
+        }
+    }
+    else if(radio2.checked && variable){
+        if(currentNode.id ==="template-2"){
+            return;
+        } else{
+            debugger;
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template2();
+                addAnimateClass(2);
+            },300);
+        }
     }
     else if(radio3.checked){
-        root.innerHTML = template3();
+        if(currentNode.id ==="template-3"){
+            return;
+        } else{
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template3();
+                addAnimateClass(3);
+            },300)
+        }
     }
     else if(radio4.checked){
-        root.innerHTML = template4();
+        if(currentNode.id ==="template-4"){
+            return;
+        } else{
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template4();
+                addAnimateClass(4);
+            },300);
+        }
     }
     else if(radio5.checked){
-        root.innerHTML = template5();
+        if(currentNode.id ==="template-5"){
+            return;
+        } else{
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template5();
+                addAnimateClass(5);
+            },300);
+        }
     }
     else if(radio6.checked){
-        root.innerHTML = template6();
+        if(currentNode.id ==="template-6"){
+            return;
+        } else{
+            currentNode.classList.add("up-animate");
+            setTimeout(() => {
+                root.innerHTML = template6();
+                addAnimateClass(6);
+            },300);
+        }
     }
 
 }
 
 renderFourPage();
+
+function addAnimateClass(number){
+    let node = document.getElementById(`template-${number}`);
+    node.classList.add("down-animate");
+}
 
