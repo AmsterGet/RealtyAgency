@@ -434,16 +434,16 @@ input[type="submit"] {
 }
 
 .number {
-    font-size: 30px;
+    font-size: 28px;
 }
 @media screen and (max-width: 1549px) {
     .number {
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 @media screen and (max-width: 1199px) {
     .number {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
@@ -975,4 +975,15 @@ input[type="submit"] {
     background-size: cover;
     z-index: 6;
     border-radius: 50%;
+}
+
+.main-item-block, .slider-item-block-container {
+    background-color: #f4f4f4;
+    transition: all .4s ease;
+}
+
+.main-item-block:hover, .slider-item-block-container:hover {
+    cursor: pointer;
+    background-color: #2a2c2b;
+    color: white;
 }

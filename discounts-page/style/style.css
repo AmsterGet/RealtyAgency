@@ -34,9 +34,7 @@
 }
 
 .slider-item-block-container {
-    transition: box-shadow .5s linear;
     width: 426px;
-    background-color: #f4f4f4;
     margin: 0 auto;
 }
 @media screen and (max-width: 1703px){
@@ -96,10 +94,6 @@
         bottom: 35%;
         font-size: 25px;
     }
-}
-
-.main-item-block {
-    background-color: #f4f4f4;
 }
 
 .main-item-block-img {
@@ -453,6 +447,7 @@
     z-index: 5;
     top: 0;
     transition: all .4s linear;
+    cursor: pointer;
 }
 @media screen and (min-width: 2800px) {
     .slider__btn {

@@ -340,17 +340,6 @@ background-color: black;
     }
 }
 
-.main-item-block {
-    background-color: #f4f4f4;
-    transition: all .4s ease;
-}
-
-.main-item-block:hover{
-    cursor: pointer;
-    background-color: #2a2c2b;
-    color: white;
-}
-
 .main-item-block:hover .img-text-set-flats {
     background-color: rgba(24, 90, 19, 0.8);
 }

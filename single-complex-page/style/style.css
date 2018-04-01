@@ -916,10 +916,6 @@ background-color: black;
     background-size: cover;
 }
 
-.main-item-block {
-    background-color: #f4f4f4;
-}
-
 .main-item-block-img {
     display: flex;
     align-items: flex-end;
@@ -964,12 +960,6 @@ background-color: black;
 
 .card-flat-set{
     width: 31%;
-}
-
-.main-item-block:hover{
-    cursor: pointer;
-    background-color: #2a2c2b;
-    color: white;
 }
 
 .main-item-block:hover .img-text-set-flats {

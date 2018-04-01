@@ -40,6 +40,9 @@
 .slick-slide:focus {
     outline: none;
 }
+.slick-slide:hover {
+    cursor: pointer;
+}
 
 .slick-list.dragging {
     cursor: pointer;
